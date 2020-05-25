@@ -1,7 +1,7 @@
 package com.CMD;
 
-import javax.crypto.spec.PSource;
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.file.Files;
@@ -86,5 +86,20 @@ public class CMD {
             return true;
         }
         return false;
+    }
+
+    public void recursiveScan(String location,String level){
+        String[] pathnames;
+        File f = new File(location);
+        pathnames = f.list();
+
+        for (String pathname : pathnames) {
+            File tmp = new File(location + "\\" + pathname);
+            if(tmp.isDirectory()){
+                recursiveScan(location + "\\" + pathname,level + "-");
+            }
+            System.out.println(level + " " + pathname);
+        }
+
     }
 }
