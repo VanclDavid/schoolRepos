@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 
 public class Runner implements Comparable<Runner> {
     public final static DateTimeFormatter startFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
-    public final static DateTimeFormatter endFormatter = DateTimeFormatter.ofPattern("HH:mm:ss:SSS");
+    public final static DateTimeFormatter endFormatter = DateTimeFormatter.ofPattern("HH:mm:ss:SS");
 
     private int personalNumber;
     private String firstName;
@@ -29,11 +29,10 @@ public class Runner implements Comparable<Runner> {
         this.field = dataArray[2];
         this.club = dataArray[3];
         this.startTime = LocalTime.parse(dataArray[4].replace(" ","").replace("\\.",""),Runner.startFormatter);
-        this.setEndTime(this.startTime.toString() + ":00");
     }
 
-    public void setEndTime(String startTime) {
-        this.endTime = LocalTime.parse(startTime,Runner.endFormatter);
+    public void setEndTime(String endTime) {
+        this.endTime = LocalTime.parse(endTime,Runner.endFormatter);
     }
 
     @Override
@@ -79,6 +78,6 @@ public class Runner implements Comparable<Runner> {
 
     @Override
     public int compareTo(Runner o) {
-        return 0;
+        return this.endTime.compareTo(o.endTime);
     }
 }

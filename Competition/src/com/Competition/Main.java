@@ -6,6 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Competition competition = new Competition(Main.startFilePath,Main.endFilePath);
-        competition.listRunners();
+        competition.sortByTime();
+        competition.listResults();
     }
 }
