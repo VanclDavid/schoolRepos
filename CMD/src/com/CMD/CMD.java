@@ -88,18 +88,19 @@ public class CMD {
         return false;
     }
 
-    public void recursiveScan(String location,String level){
-        String[] pathnames;
-        File f = new File(location);
-        pathnames = f.list();
+    public void recursiveScan(File location){
+        recursiveScan(location,"-");
+    }
 
-        for (String pathname : pathnames) {
-            File tmp = new File(location + "\\" + pathname);
-            if(tmp.isDirectory()){
-                recursiveScan(location + "\\" + pathname,level + "-");
+
+    public void recursiveScan(File location,String level){
+        File[] pathNames = location.listFiles();
+        assert pathNames != null;
+        for (File pathname : pathNames) {
+            if(pathname.isDirectory()){
+                recursiveScan(new File(pathname.getParent() + File.separator + pathname.getName()),level + "-");
             }
-            System.out.println(level + " " + pathname);
+            System.out.println(level + " " + pathname.getName());
         }
-
     }
 }
