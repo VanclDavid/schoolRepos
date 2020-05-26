@@ -1,0 +1,101 @@
+.TH "com.Library.Accounts.AccountInterface" 3 "ne 17. kvě 2020" "Version 1" "Dokumentace BookLibrary" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.Library.Accounts.AccountInterface \- Interface pro uživatele\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Zděděna třídou \fBcom\&.Library\&.Accounts\&.AccountTemplate\fP\&.
+.SS "Veřejné metody"
+
+.in +1c
+.ti -1c
+.RI "boolean \fBget_p_showLibrary\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBget_p_createOrder\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBget_p_cart\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBget_p_logOut\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBget_p_exit\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBget_p_createBook\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBget_p_permissions\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBget_p_manage\fP ()"
+.br
+.ti -1c
+.RI "String \fBgetPermissions\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetPermissions\fP (boolean showLibrary, boolean createOrder, boolean createBook, boolean cart, boolean logOut, boolean exit, boolean permissions, boolean manage)"
+.br
+.ti -1c
+.RI "String \fBgetDataAsString\fP ()"
+.br
+.in -1c
+.SH "Detailní popis"
+.PP 
+Interface pro uživatele\&. 
+.SH "Dokumentace k metodám"
+.PP 
+.SS "boolean com\&.Library\&.Accounts\&.AccountInterface\&.get_p_cart ()"
+
+.PP
+Reimplementováno v \fBcom\&.Library\&.Accounts\&.AccountTemplate\fP\&.
+.SS "boolean com\&.Library\&.Accounts\&.AccountInterface\&.get_p_createBook ()"
+
+.PP
+Reimplementováno v \fBcom\&.Library\&.Accounts\&.AccountTemplate\fP\&.
+.SS "boolean com\&.Library\&.Accounts\&.AccountInterface\&.get_p_createOrder ()"
+
+.PP
+Reimplementováno v \fBcom\&.Library\&.Accounts\&.AccountTemplate\fP\&.
+.SS "boolean com\&.Library\&.Accounts\&.AccountInterface\&.get_p_exit ()"
+
+.PP
+Reimplementováno v \fBcom\&.Library\&.Accounts\&.AccountTemplate\fP\&.
+.SS "boolean com\&.Library\&.Accounts\&.AccountInterface\&.get_p_logOut ()"
+
+.PP
+Reimplementováno v \fBcom\&.Library\&.Accounts\&.AccountTemplate\fP\&.
+.SS "boolean com\&.Library\&.Accounts\&.AccountInterface\&.get_p_manage ()"
+
+.PP
+Reimplementováno v \fBcom\&.Library\&.Accounts\&.AccountTemplate\fP\&.
+.SS "boolean com\&.Library\&.Accounts\&.AccountInterface\&.get_p_permissions ()"
+
+.PP
+Reimplementováno v \fBcom\&.Library\&.Accounts\&.AccountTemplate\fP\&.
+.SS "boolean com\&.Library\&.Accounts\&.AccountInterface\&.get_p_showLibrary ()"
+
+.PP
+Reimplementováno v \fBcom\&.Library\&.Accounts\&.AccountTemplate\fP\&.
+.SS "String com\&.Library\&.Accounts\&.AccountInterface\&.getDataAsString ()"
+
+.PP
+Reimplementováno v \fBcom\&.Library\&.Accounts\&.SuperUser\fP a \fBcom\&.Library\&.Accounts\&.ClassicUser\fP\&.
+.SS "String com\&.Library\&.Accounts\&.AccountInterface\&.getPermissions ()"
+
+.PP
+Reimplementováno v \fBcom\&.Library\&.Accounts\&.AccountTemplate\fP\&.
+.SS "void com\&.Library\&.Accounts\&.AccountInterface\&.setPermissions (boolean showLibrary, boolean createOrder, boolean createBook, boolean cart, boolean logOut, boolean exit, boolean permissions, boolean manage)"
+
+.PP
+Reimplementováno v \fBcom\&.Library\&.Accounts\&.ClassicUser\fP a \fBcom\&.Library\&.Accounts\&.SuperUser\fP\&.
+
+.SH "Autor"
+.PP 
+Generováno automaticky programem Doxygen ze zdrojových textů projektu Dokumentace BookLibrary\&.

@@ -1,0 +1,150 @@
+.TH "com.Library.GUI.ListLibrary" 3 "ne 17. kvě 2020" "Version 1" "Dokumentace BookLibrary" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.Library.GUI.ListLibrary \- Třída \fBGUI\fP pro \fBListLibrary\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Dědí z bázové třídy \fBcom\&.Library\&.Utils\&.JPanelTemplate\fP\&.
+.SS "Veřejné metody"
+
+.in +1c
+.ti -1c
+.RI "\fBListLibrary\fP (\fBAppGUI\fP frame, boolean \fBisVisible\fP)"
+.br
+.ti -1c
+.RI "void \fBloadCustomComponents\fP ()"
+.br
+.ti -1c
+.RI "\fBCart\fP \fBgetCart\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetUsedSQL\fP (String sql)"
+.br
+.ti -1c
+.RI "void \fBsetMaxValue\fP (int maxValue)"
+.br
+.ti -1c
+.RI "void \fBreloadItemsByPage\fP (int page)"
+.br
+.ti -1c
+.RI "void \fBincreasePage\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetPage\fP (int page)"
+.br
+.ti -1c
+.RI "void \fBdecreasePage\fP ()"
+.br
+.in -1c
+.SS "Veřejné atributy"
+
+.in +1c
+.ti -1c
+.RI "\fBDataPanel\fP \fBdataPanel\fP"
+.br
+.in -1c
+.SS "Další zděděné členy"
+.SH "Detailní popis"
+.PP 
+Třída \fBGUI\fP pro \fBListLibrary\fP\&. 
+
+
+.PP
+\fBViz také\fP
+.RS 4
+\fBJPanelTemplate\fP 
+.RE
+.PP
+
+.SH "Dokumentace konstruktoru a destruktoru"
+.PP 
+.SS "com\&.Library\&.GUI\&.ListLibrary\&.ListLibrary (\fBAppGUI\fP frame, boolean isVisible)"
+Konstruktor \fBListLibrary\fP Složí \fBGUI\fP
+.PP
+\fBParametry\fP
+.RS 4
+\fIframe\fP nadřazený frame 
+.br
+\fIisVisible\fP viditelnost 
+.RE
+.PP
+
+.SH "Dokumentace k metodám"
+.PP 
+.SS "void com\&.Library\&.GUI\&.ListLibrary\&.decreasePage ()"
+Překlopí se o stránku níže\&. 
+.SS "\fBCart\fP com\&.Library\&.GUI\&.ListLibrary\&.getCart ()"
+
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+\fBCart\fP page 
+.RE
+.PP
+
+.SS "void com\&.Library\&.GUI\&.ListLibrary\&.increasePage ()"
+Překlopí se na další stránku\&. 
+.SS "void com\&.Library\&.GUI\&.ListLibrary\&.loadCustomComponents ()"
+Načtení komponent a dat
+.PP
+\fBViz také\fP
+.RS 4
+ListLibraryLogic 
+.RE
+.PP
+
+.SS "void com\&.Library\&.GUI\&.ListLibrary\&.reloadItemsByPage (int page)"
+Metoda pro obnovení, načtení dat z databáze\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIpage\fP stránka 
+.RE
+.PP
+\fBViz také\fP
+.RS 4
+\fBcom\&.Library\&.Database\&.DatabaseManager\fP Načtení do pole jednotlivých itemů\&. 
+.PP
+ListedItem 
+.RE
+.PP
+
+.SS "void com\&.Library\&.GUI\&.ListLibrary\&.setMaxValue (int maxValue)"
+Nastaví se maximální hodnota counteru\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fImaxValue\fP nová hodnota 
+.RE
+.PP
+
+.SS "void com\&.Library\&.GUI\&.ListLibrary\&.setPage (int page)"
+Nastaví se na aktuální stránku\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIpage\fP stránka\&. 
+.RE
+.PP
+
+.SS "void com\&.Library\&.GUI\&.ListLibrary\&.setUsedSQL (String sql)"
+Nastaví se poslední použité SQL
+.PP
+\fBParametry\fP
+.RS 4
+\fIsql\fP nové SQL 
+.RE
+.PP
+
+.SH "Dokumentace k datovým členům"
+.PP 
+.SS "\fBDataPanel\fP com\&.Library\&.GUI\&.ListLibrary\&.dataPanel"
+Panel s daty 
+
+.SH "Autor"
+.PP 
+Generováno automaticky programem Doxygen ze zdrojových textů projektu Dokumentace BookLibrary\&.

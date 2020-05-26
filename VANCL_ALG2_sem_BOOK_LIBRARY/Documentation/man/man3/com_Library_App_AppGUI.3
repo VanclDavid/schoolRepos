@@ -1,0 +1,178 @@
+.TH "com.Library.App.AppGUI" 3 "ne 17. kvě 2020" "Version 1" "Dokumentace BookLibrary" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.Library.App.AppGUI \- Hlavní frame aplikace\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Dědí z bázové třídy JFrame\&.
+.SS "Veřejné metody"
+
+.in +1c
+.ti -1c
+.RI "\fBAppGUI\fP ()"
+.br
+.ti -1c
+.RI "\fBMenu\fP \fBgetMenu\fP ()"
+.br
+.ti -1c
+.RI "void \fBresetMenu\fP ()"
+.br
+.ti -1c
+.RI "\fBLogin\fP \fBgetLogin\fP ()"
+.br
+.ti -1c
+.RI "\fBOrder\fP \fBgetOrder\fP ()"
+.br
+.ti -1c
+.RI "\fBCart\fP \fBgetCart\fP ()"
+.br
+.ti -1c
+.RI "\fBRegister\fP \fBgetRegister\fP ()"
+.br
+.ti -1c
+.RI "\fBListLibrary\fP \fBgetListLibrary\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetHeight\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetWidth\fP ()"
+.br
+.ti -1c
+.RI "void \fBswapScreen\fP (JPanel from, JPanel to)"
+.br
+.in -1c
+.SS "Statické veřejné atributy"
+
+.in +1c
+.ti -1c
+.RI "static \fBAccountTemplate\fP \fBaccount\fP = null"
+.br
+.ti -1c
+.RI "static ArrayList< \fBCartItem\fP > \fBcartList\fP = new ArrayList<>()"
+.br
+.in -1c
+.SH "Detailní popis"
+.PP 
+Hlavní frame aplikace\&. 
+.SH "Dokumentace konstruktoru a destruktoru"
+.PP 
+.SS "com\&.Library\&.App\&.AppGUI\&.AppGUI ()"
+Konstruktor Třídy 
+.PP
+Přídá na okno listener pro logování zavření aplikace 
+.SH "Dokumentace k metodám"
+.PP 
+.SS "\fBCart\fP com\&.Library\&.App\&.AppGUI\&.getCart ()"
+Vrací rozhraní Cart, pokud není tak ho vytvoří
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+Cart \fBGUI\fP 
+.RE
+.PP
+
+.SS "int com\&.Library\&.App\&.AppGUI\&.getHeight ()"
+
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+výška aplikace 
+.RE
+.PP
+
+.SS "\fBListLibrary\fP com\&.Library\&.App\&.AppGUI\&.getListLibrary ()"
+Vrací rozhraní ListLibrary, pokud není tak ho vytvoří
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+ListLibrary \fBGUI\fP 
+.RE
+.PP
+
+.SS "\fBLogin\fP com\&.Library\&.App\&.AppGUI\&.getLogin ()"
+Vrací rozhraní Login, pokud není tak ho vytvoří
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+Login \fBGUI\fP 
+.RE
+.PP
+
+.SS "\fBMenu\fP com\&.Library\&.App\&.AppGUI\&.getMenu ()"
+Vrací rozhraní Menu, pokud není tak ho vytvoří
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+Menu \fBGUI\fP 
+.RE
+.PP
+
+.SS "\fBOrder\fP com\&.Library\&.App\&.AppGUI\&.getOrder ()"
+Vrací rozhraní Order, pokud není tak ho vytvoří
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+Order \fBGUI\fP 
+.RE
+.PP
+
+.SS "\fBRegister\fP com\&.Library\&.App\&.AppGUI\&.getRegister ()"
+Vrací rozhraní Register, pokud není tak ho vytvoří
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+Register \fBGUI\fP 
+.RE
+.PP
+
+.SS "int com\&.Library\&.App\&.AppGUI\&.getWidth ()"
+
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+šířka aplikace 
+.RE
+.PP
+
+.SS "void com\&.Library\&.App\&.AppGUI\&.resetMenu ()"
+Resetuje Menu 
+.SS "void com\&.Library\&.App\&.AppGUI\&.swapScreen (JPanel from, JPanel to)"
+Metoda pro změnu aktivního okna aplikace
+.PP
+\fBParametry\fP
+.RS 4
+\fIfrom\fP staré okno 
+.br
+\fIto\fP nové okno 
+.RE
+.PP
+
+.SH "Dokumentace k datovým členům"
+.PP 
+.SS "\fBAccountTemplate\fP com\&.Library\&.App\&.AppGUI\&.account = null\fC [static]\fP"
+Paměť s přihášeným uživatelem
+.PP
+\fBViz také\fP
+.RS 4
+AccountTemplate 
+.RE
+.PP
+
+.SS "ArrayList<\fBCartItem\fP> com\&.Library\&.App\&.AppGUI\&.cartList = new ArrayList<>()\fC [static]\fP"
+Košík přihlášeného uživatele Zde pro pozdější úpravu (Anonymní uživatel)
+.PP
+\fBViz také\fP
+.RS 4
+CartItem 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generováno automaticky programem Doxygen ze zdrojových textů projektu Dokumentace BookLibrary\&.

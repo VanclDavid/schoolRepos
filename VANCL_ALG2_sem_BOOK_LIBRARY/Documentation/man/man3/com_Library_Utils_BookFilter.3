@@ -1,0 +1,78 @@
+.TH "com.Library.Utils.BookFilter" 3 "ne 17. kvě 2020" "Version 1" "Dokumentace BookLibrary" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.Library.Utils.BookFilter \- Třída filter aplikující se na DB\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Dědí z bázové třídy JPanel\&.
+.SS "Veřejné metody"
+
+.in +1c
+.ti -1c
+.RI "\fBBookFilter\fP (JPanel mainPanel, String tableName)"
+.br
+.ti -1c
+.RI "void \fBcollectData\fP ()"
+.br
+.ti -1c
+.RI "String \fBgetSQL\fP ()"
+.br
+.ti -1c
+.RI "ArrayList< String > \fBgetParams\fP ()"
+.br
+.in -1c
+.SH "Detailní popis"
+.PP 
+Třída filter aplikující se na DB\&. 
+
+
+.PP
+\fBViz také\fP
+.RS 4
+JPanel 
+.RE
+.PP
+
+.SH "Dokumentace konstruktoru a destruktoru"
+.PP 
+.SS "com\&.Library\&.Utils\&.BookFilter\&.BookFilter (JPanel mainPanel, String tableName)"
+Konstruktor Filtru
+.PP
+\fBParametry\fP
+.RS 4
+\fImainPanel\fP nadřazený panel 
+.br
+\fItableName\fP název tabulky 
+.RE
+.PP
+
+.SH "Dokumentace k metodám"
+.PP 
+.SS "void com\&.Library\&.Utils\&.BookFilter\&.collectData ()"
+Metoda pro sezbírání dat z filtru 
+.SS "ArrayList<String> com\&.Library\&.Utils\&.BookFilter\&.getParams ()"
+Použité parametry
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+parametry 
+.RE
+.PP
+
+.SS "String com\&.Library\&.Utils\&.BookFilter\&.getSQL ()"
+Vrací použité SQL
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+SQL 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generováno automaticky programem Doxygen ze zdrojových textů projektu Dokumentace BookLibrary\&.

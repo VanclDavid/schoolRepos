@@ -1,0 +1,45 @@
+.TH "com.Library.App.LoginLogic" 3 "ne 17. kvě 2020" "Version 1" "Dokumentace BookLibrary" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.Library.App.LoginLogic \- Logika přihlášení\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Statické veřejné metody"
+
+.in +1c
+.ti -1c
+.RI "static int \fBcheckLogin\fP (\fBLogin\fP login, String nickname, char[] password, boolean isRemember)"
+.br
+.in -1c
+.SH "Detailní popis"
+.PP 
+Logika přihlášení\&. 
+.SH "Dokumentace k metodám"
+.PP 
+.SS "static int com\&.Library\&.App\&.LoginLogic\&.checkLogin (\fBLogin\fP login, String nickname, char[] password, boolean isRemember)\fC [static]\fP"
+Metoda pro ověření platnosti loginu
+.PP
+\fBParametry\fP
+.RS 4
+\fIlogin\fP Panel Login\&. 
+.br
+\fInickname\fP Zadaný nickname\&. 
+.br
+\fIpassword\fP Heslo uživatele\&. 
+.br
+\fIisRemember\fP Jesli se má uživatel pamatovat nebo ne\&. 
+.RE
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+0 - úspěch,500 - error 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generováno automaticky programem Doxygen ze zdrojových textů projektu Dokumentace BookLibrary\&.

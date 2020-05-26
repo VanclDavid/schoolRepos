@@ -1,0 +1,137 @@
+.TH "com.Library.Utils.DataPanel" 3 "ne 17. kvě 2020" "Version 1" "Dokumentace BookLibrary" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.Library.Utils.DataPanel \- Třída zobrazující itemy\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Dědí z bázové třídy JPanel\&.
+.SS "Veřejné metody"
+
+.in +1c
+.ti -1c
+.RI "\fBDataPanel\fP (JPanel upper, boolean pages, int customHeight)"
+.br
+.ti -1c
+.RI "void \fBpaintComponent\fP (Graphics g)"
+.br
+.ti -1c
+.RI "void \fBsetPagesNumber\fP (int page, int all)"
+.br
+.ti -1c
+.RI "void \fBaddItem\fP (\fBListedItem\fP item)"
+.br
+.ti -1c
+.RI "void \fBaddItemC\fP (\fBCartItem\fP item)"
+.br
+.ti -1c
+.RI "void \fBclearItems\fP ()"
+.br
+.ti -1c
+.RI "void \fBclearItemsC\fP ()"
+.br
+.in -1c
+.SS "Veřejné atributy"
+
+.in +1c
+.ti -1c
+.RI "JSpinner \fBspinner\fP"
+.br
+.in -1c
+.SH "Detailní popis"
+.PP 
+Třída zobrazující itemy\&. 
+
+
+.PP
+\fBViz také\fP
+.RS 4
+JPanel 
+.RE
+.PP
+
+.SH "Dokumentace konstruktoru a destruktoru"
+.PP 
+.SS "com\&.Library\&.Utils\&.DataPanel\&.DataPanel (JPanel upper, boolean pages, int customHeight)"
+Konstruktor třídy Sestavý \fBDataPanel\fP
+.PP
+\fBParametry\fP
+.RS 4
+\fIupper\fP nadřazený panel 
+.br
+\fIpages\fP aktuální stránka 
+.br
+\fIcustomHeight\fP upravená výška panelu 
+.RE
+.PP
+
+.SH "Dokumentace k metodám"
+.PP 
+.SS "void com\&.Library\&.Utils\&.DataPanel\&.addItem (\fBListedItem\fP item)"
+Přídání itemu na seznam typu \fBListedItem\fP
+.PP
+\fBParametry\fP
+.RS 4
+\fIitem\fP vytovřený item 
+.RE
+.PP
+\fBViz také\fP
+.RS 4
+\fBListedItem\fP 
+.RE
+.PP
+
+.SS "void com\&.Library\&.Utils\&.DataPanel\&.addItemC (\fBCartItem\fP item)"
+Přídání itemu na seznam typu \fBCartItem\fP
+.PP
+\fBParametry\fP
+.RS 4
+\fIitem\fP vytovřený item 
+.RE
+.PP
+\fBViz také\fP
+.RS 4
+\fBCartItem\fP 
+.RE
+.PP
+
+.SS "void com\&.Library\&.Utils\&.DataPanel\&.clearItems ()"
+Smaže všechny itemy v panelu typu: \fBListedItem\fP
+.PP
+\fBViz také\fP
+.RS 4
+\fBListedItem\fP 
+.RE
+.PP
+
+.SS "void com\&.Library\&.Utils\&.DataPanel\&.clearItemsC ()"
+Smaže všechny itemy v panelu typu: \fBCartItem\fP
+.PP
+\fBViz také\fP
+.RS 4
+\fBCartItem\fP 
+.RE
+.PP
+
+.SS "void com\&.Library\&.Utils\&.DataPanel\&.paintComponent (Graphics g)"
+Metoda pro překreslování pozadí panelu\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIg\fP graphic 
+.RE
+.PP
+
+.SS "void com\&.Library\&.Utils\&.DataPanel\&.setPagesNumber (int page, int all)"
+Nastaví aktuální stránku\&. 
+.SH "Dokumentace k datovým členům"
+.PP 
+.SS "JSpinner com\&.Library\&.Utils\&.DataPanel\&.spinner"
+Stránkovač\&. 
+
+.SH "Autor"
+.PP 
+Generováno automaticky programem Doxygen ze zdrojových textů projektu Dokumentace BookLibrary\&.

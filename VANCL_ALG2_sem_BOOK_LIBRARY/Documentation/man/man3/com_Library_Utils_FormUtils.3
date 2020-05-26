@@ -1,0 +1,126 @@
+.TH "com.Library.Utils.FormUtils" 3 "ne 17. kvě 2020" "Version 1" "Dokumentace BookLibrary" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.Library.Utils.FormUtils \- Abstraktní třída s utility pro formulář\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Statické veřejné metody"
+
+.in +1c
+.ti -1c
+.RI "static boolean \fBnameCorrection\fP (String name)"
+.br
+.ti -1c
+.RI "static boolean \fBnicknameCorrection\fP (String nickname)"
+.br
+.ti -1c
+.RI "static boolean \fBpasswordCorrection\fP (String password)"
+.br
+.ti -1c
+.RI "static boolean \fBmatchTwoStrings\fP (String string1, String string2)"
+.br
+.ti -1c
+.RI "static String \fBbytesToHex\fP (byte[] hash)"
+.br
+.ti -1c
+.RI "static byte[] \fBhashToSha256\fP (String text)"
+.br
+.in -1c
+.SH "Detailní popis"
+.PP 
+Abstraktní třída s utility pro formulář\&. 
+.SH "Dokumentace k metodám"
+.PP 
+.SS "static String com\&.Library\&.Utils\&.FormUtils\&.bytesToHex (byte[] hash)\fC [static]\fP"
+Konvertuje byte pole hashe do stringu\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIhash\fP pole hash 
+.RE
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+zahashovaný string 
+.RE
+.PP
+
+.SS "static byte [] com\&.Library\&.Utils\&.FormUtils\&.hashToSha256 (String text)\fC [static]\fP"
+Zašufruje data do sha256\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fItext\fP data 
+.RE
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+byte pole 
+.RE
+.PP
+
+.SS "static boolean com\&.Library\&.Utils\&.FormUtils\&.matchTwoStrings (String string1, String string2)\fC [static]\fP"
+Porovnání dvou stringů\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIstring1\fP text1 
+.br
+\fIstring2\fP text2 
+.RE
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+true/false 
+.RE
+.PP
+
+.SS "static boolean com\&.Library\&.Utils\&.FormUtils\&.nameCorrection (String name)\fC [static]\fP"
+Metoda kontrolující korekci jména\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIname\fP jméno 
+.RE
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+true/false 
+.RE
+.PP
+
+.SS "static boolean com\&.Library\&.Utils\&.FormUtils\&.nicknameCorrection (String nickname)\fC [static]\fP"
+Metoda kontrolující nickname
+.PP
+\fBParametry\fP
+.RS 4
+\fInickname\fP nickname 
+.RE
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+true/false 
+.RE
+.PP
+
+.SS "static boolean com\&.Library\&.Utils\&.FormUtils\&.passwordCorrection (String password)\fC [static]\fP"
+Požadavky na zadané heslo\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIpassword\fP heslo 
+.RE
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+true/false 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generováno automaticky programem Doxygen ze zdrojových textů projektu Dokumentace BookLibrary\&.

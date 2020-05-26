@@ -1,0 +1,131 @@
+\hypertarget{classcom_1_1_library_1_1_utils_1_1_form_utils}{}\doxysection{Dokumentace třídy com.\+Library.\+Utils.\+Form\+Utils}
+\label{classcom_1_1_library_1_1_utils_1_1_form_utils}\index{com.Library.Utils.FormUtils@{com.Library.Utils.FormUtils}}
+
+
+Abstraktní třída s utility pro formulář.  
+
+
+\doxysubsection*{Statické veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1_library_1_1_utils_1_1_form_utils_ad2f23b6c15d361179d6352f261694a55}{name\+Correction}} (String name)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1_library_1_1_utils_1_1_form_utils_aa7b5dda4c35d5d84e9518b5c14cf4329}{nickname\+Correction}} (String nickname)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1_library_1_1_utils_1_1_form_utils_a4baa3a2a64d21cf16251cf297c0d5c5a}{password\+Correction}} (String password)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1_library_1_1_utils_1_1_form_utils_aad6c8a7e7ced7a19bec9f4afa4d9a26a}{match\+Two\+Strings}} (String string1, String string2)
+\item 
+static String \mbox{\hyperlink{classcom_1_1_library_1_1_utils_1_1_form_utils_ac45732dec6195805cf025b8486fb34b8}{bytes\+To\+Hex}} (byte\mbox{[}$\,$\mbox{]} hash)
+\item 
+static byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1_library_1_1_utils_1_1_form_utils_a00bdf3f71a711802d28d88078c63730f}{hash\+To\+Sha256}} (String text)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailní popis}
+Abstraktní třída s utility pro formulář. 
+
+\doxysubsection{Dokumentace k metodám}
+\mbox{\Hypertarget{classcom_1_1_library_1_1_utils_1_1_form_utils_ac45732dec6195805cf025b8486fb34b8}\label{classcom_1_1_library_1_1_utils_1_1_form_utils_ac45732dec6195805cf025b8486fb34b8}} 
+\index{com.Library.Utils.FormUtils@{com.Library.Utils.FormUtils}!bytesToHex@{bytesToHex}}
+\index{bytesToHex@{bytesToHex}!com.Library.Utils.FormUtils@{com.Library.Utils.FormUtils}}
+\doxysubsubsection{\texorpdfstring{bytesToHex()}{bytesToHex()}}
+{\footnotesize\ttfamily static String com.\+Library.\+Utils.\+Form\+Utils.\+bytes\+To\+Hex (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{hash }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Konvertuje byte pole hashe do stringu.
+
+
+\begin{DoxyParams}{Parametry}
+{\em hash} & pole hash \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Návratová hodnota}
+zahashovaný string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1_library_1_1_utils_1_1_form_utils_a00bdf3f71a711802d28d88078c63730f}\label{classcom_1_1_library_1_1_utils_1_1_form_utils_a00bdf3f71a711802d28d88078c63730f}} 
+\index{com.Library.Utils.FormUtils@{com.Library.Utils.FormUtils}!hashToSha256@{hashToSha256}}
+\index{hashToSha256@{hashToSha256}!com.Library.Utils.FormUtils@{com.Library.Utils.FormUtils}}
+\doxysubsubsection{\texorpdfstring{hashToSha256()}{hashToSha256()}}
+{\footnotesize\ttfamily static byte \mbox{[}$\,$\mbox{]} com.\+Library.\+Utils.\+Form\+Utils.\+hash\+To\+Sha256 (\begin{DoxyParamCaption}\item[{String}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Zašufruje data do sha256.
+
+
+\begin{DoxyParams}{Parametry}
+{\em text} & data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Návratová hodnota}
+byte pole 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1_library_1_1_utils_1_1_form_utils_aad6c8a7e7ced7a19bec9f4afa4d9a26a}\label{classcom_1_1_library_1_1_utils_1_1_form_utils_aad6c8a7e7ced7a19bec9f4afa4d9a26a}} 
+\index{com.Library.Utils.FormUtils@{com.Library.Utils.FormUtils}!matchTwoStrings@{matchTwoStrings}}
+\index{matchTwoStrings@{matchTwoStrings}!com.Library.Utils.FormUtils@{com.Library.Utils.FormUtils}}
+\doxysubsubsection{\texorpdfstring{matchTwoStrings()}{matchTwoStrings()}}
+{\footnotesize\ttfamily static boolean com.\+Library.\+Utils.\+Form\+Utils.\+match\+Two\+Strings (\begin{DoxyParamCaption}\item[{String}]{string1,  }\item[{String}]{string2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Porovnání dvou stringů.
+
+
+\begin{DoxyParams}{Parametry}
+{\em string1} & text1 \\
+\hline
+{\em string2} & text2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Návratová hodnota}
+true/false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1_library_1_1_utils_1_1_form_utils_ad2f23b6c15d361179d6352f261694a55}\label{classcom_1_1_library_1_1_utils_1_1_form_utils_ad2f23b6c15d361179d6352f261694a55}} 
+\index{com.Library.Utils.FormUtils@{com.Library.Utils.FormUtils}!nameCorrection@{nameCorrection}}
+\index{nameCorrection@{nameCorrection}!com.Library.Utils.FormUtils@{com.Library.Utils.FormUtils}}
+\doxysubsubsection{\texorpdfstring{nameCorrection()}{nameCorrection()}}
+{\footnotesize\ttfamily static boolean com.\+Library.\+Utils.\+Form\+Utils.\+name\+Correction (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Metoda kontrolující korekci jména.
+
+
+\begin{DoxyParams}{Parametry}
+{\em name} & jméno \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Návratová hodnota}
+true/false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1_library_1_1_utils_1_1_form_utils_aa7b5dda4c35d5d84e9518b5c14cf4329}\label{classcom_1_1_library_1_1_utils_1_1_form_utils_aa7b5dda4c35d5d84e9518b5c14cf4329}} 
+\index{com.Library.Utils.FormUtils@{com.Library.Utils.FormUtils}!nicknameCorrection@{nicknameCorrection}}
+\index{nicknameCorrection@{nicknameCorrection}!com.Library.Utils.FormUtils@{com.Library.Utils.FormUtils}}
+\doxysubsubsection{\texorpdfstring{nicknameCorrection()}{nicknameCorrection()}}
+{\footnotesize\ttfamily static boolean com.\+Library.\+Utils.\+Form\+Utils.\+nickname\+Correction (\begin{DoxyParamCaption}\item[{String}]{nickname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Metoda kontrolující nickname
+
+
+\begin{DoxyParams}{Parametry}
+{\em nickname} & nickname \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Návratová hodnota}
+true/false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1_library_1_1_utils_1_1_form_utils_a4baa3a2a64d21cf16251cf297c0d5c5a}\label{classcom_1_1_library_1_1_utils_1_1_form_utils_a4baa3a2a64d21cf16251cf297c0d5c5a}} 
+\index{com.Library.Utils.FormUtils@{com.Library.Utils.FormUtils}!passwordCorrection@{passwordCorrection}}
+\index{passwordCorrection@{passwordCorrection}!com.Library.Utils.FormUtils@{com.Library.Utils.FormUtils}}
+\doxysubsubsection{\texorpdfstring{passwordCorrection()}{passwordCorrection()}}
+{\footnotesize\ttfamily static boolean com.\+Library.\+Utils.\+Form\+Utils.\+password\+Correction (\begin{DoxyParamCaption}\item[{String}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Požadavky na zadané heslo.
+
+
+\begin{DoxyParams}{Parametry}
+{\em password} & heslo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Návratová hodnota}
+true/false 
+\end{DoxyReturn}
+
+
+Dokumentace pro tuto třídu byla generována z následujícího souboru\+:\begin{DoxyCompactItemize}
+\item 
+Utils/\mbox{\hyperlink{_form_utils_8java}{Form\+Utils.\+java}}\end{DoxyCompactItemize}

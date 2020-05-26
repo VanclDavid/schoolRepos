@@ -1,0 +1,81 @@
+.TH "com.Library.Accounts.SuperUser" 3 "ne 17. kvě 2020" "Version 1" "Dokumentace BookLibrary" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.Library.Accounts.SuperUser \- Třída definující Super uživatele\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Dědí z bázové třídy \fBcom\&.Library\&.Accounts\&.AccountTemplate\fP\&.
+.SS "Veřejné metody"
+
+.in +1c
+.ti -1c
+.RI "\fBSuperUser\fP (String nickname)"
+.br
+.ti -1c
+.RI "void \fBsetPermissions\fP (boolean showLibrary, boolean createOrder, boolean createBook, boolean cart, boolean logOut, boolean exit, boolean permissions, boolean manage)"
+.br
+.ti -1c
+.RI "String \fBgetDataAsString\fP ()"
+.br
+.in -1c
+.SS "Další zděděné členy"
+.SH "Detailní popis"
+.PP 
+Třída definující Super uživatele\&. 
+.SH "Dokumentace konstruktoru a destruktoru"
+.PP 
+.SS "com\&.Library\&.Accounts\&.SuperUser\&.SuperUser (String nickname)"
+Konstruktor pro \fBSuperUser\fP 
+.PP
+\fBParametry\fP
+.RS 4
+\fInickname\fP Nickanme Přepíše nutná oprávnění 
+.RE
+.PP
+
+.SH "Dokumentace k metodám"
+.PP 
+.SS "String com\&.Library\&.Accounts\&.SuperUser\&.getDataAsString ()"
+Metoda pro výpis dat o uživately\&. 
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+String dat\&. 
+.RE
+.PP
+
+.PP
+Reimplementuje stejnojmenný prvek z \fBcom\&.Library\&.Accounts\&.AccountInterface\fP\&.
+.SS "void com\&.Library\&.Accounts\&.SuperUser\&.setPermissions (boolean showLibrary, boolean createOrder, boolean createBook, boolean cart, boolean logOut, boolean exit, boolean permissions, boolean manage)"
+Metoda pro nastavení oprávění pro zobrazení\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIshowLibrary\fP (true/false) showLibrary 
+.br
+\fIcreateOrder\fP (true/false) createOrder 
+.br
+\fIcreateBook\fP (true/false) createBook 
+.br
+\fIcart\fP (true/false) cart 
+.br
+\fIlogOut\fP (true/false) logOut 
+.br
+\fIexit\fP (true/false) exit 
+.br
+\fIpermissions\fP (true/false) permissions 
+.br
+\fImanage\fP (true/false) manage 
+.RE
+.PP
+
+.PP
+Reimplementuje stejnojmenný prvek z \fBcom\&.Library\&.Accounts\&.AccountInterface\fP\&.
+
+.SH "Autor"
+.PP 
+Generováno automaticky programem Doxygen ze zdrojových textů projektu Dokumentace BookLibrary\&.

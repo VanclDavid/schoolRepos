@@ -1,0 +1,180 @@
+.TH "com.Library.Database.DatabaseManager" 3 "ne 17. kvě 2020" "Version 1" "Dokumentace BookLibrary" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.Library.Database.DatabaseManager \- Třída manipulující s databází\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Dědí z bázové třídy \fBcom\&.Library\&.Database\&.DatabaseData\fP\&.
+.SS "Veřejné metody"
+
+.in +1c
+.ti -1c
+.RI "\fBDatabaseManager\fP ()"
+.br
+.ti -1c
+.RI "void \fBcloseConnection\fP ()"
+.br
+.ti -1c
+.RI "void \fBregisterUserSafe\fP (String query, String name, String surname, String nickname, String \fBpassword\fP, String date)"
+.br
+.ti -1c
+.RI "void \fBsetUserPermissions\fP (String query, String name, String type)"
+.br
+.ti -1c
+.RI "void \fBsetOrderSafe\fP (String query, String nickname, String contact, String address, String books)"
+.br
+.ti -1c
+.RI "ResultSet \fBgetUserExistsSafe\fP (String query, String nickname)"
+.br
+.ti -1c
+.RI "ResultSet \fBloginDataCheck\fP (String query, String nickname, String \fBpassword\fP)"
+.br
+.ti -1c
+.RI "ResultSet \fBgetAllData\fP (String query)"
+.br
+.ti -1c
+.RI "ResultSet \fBgetDynamicData\fP (String query, ArrayList< String > params)"
+.br
+.in -1c
+.SS "Další zděděné členy"
+.SH "Detailní popis"
+.PP 
+Třída manipulující s databází\&. 
+
+
+.PP
+\fBViz také\fP
+.RS 4
+\fBDatabaseData\fP 
+.RE
+.PP
+
+.SH "Dokumentace konstruktoru a destruktoru"
+.PP 
+.SS "com\&.Library\&.Database\&.DatabaseManager\&.DatabaseManager ()"
+Metoda vztvoří spojení s databází\&. 
+.SH "Dokumentace k metodám"
+.PP 
+.SS "void com\&.Library\&.Database\&.DatabaseManager\&.closeConnection ()"
+Uzavírá spojení s databaází\&. 
+.SS "ResultSet com\&.Library\&.Database\&.DatabaseManager\&.getAllData (String query)"
+Metoda pro vzhledávání bez omezení
+.PP
+\fBParametry\fP
+.RS 4
+\fIquery\fP SQL 
+.RE
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+vrací nalezené data 
+.RE
+.PP
+
+.SS "ResultSet com\&.Library\&.Database\&.DatabaseManager\&.getDynamicData (String query, ArrayList< String > params)"
+Metoda pro dynamické vytváření SQL\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIquery\fP SQL 
+.br
+\fIparams\fP parametry 
+.RE
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+vrací nalezené data 
+.RE
+.PP
+
+.SS "ResultSet com\&.Library\&.Database\&.DatabaseManager\&.getUserExistsSafe (String query, String nickname)"
+Metoda ověří jestli uživatel existuje\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIquery\fP SQL 
+.br
+\fInickname\fP Nickname 
+.RE
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+data o nalezení 
+.RE
+.PP
+
+.SS "ResultSet com\&.Library\&.Database\&.DatabaseManager\&.loginDataCheck (String query, String nickname, String password)"
+Ověří zadané data\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIquery\fP SQL 
+.br
+\fInickname\fP Nickname 
+.br
+\fIpassword\fP Heslo 
+.RE
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+vrací nalezené data\&. 
+.RE
+.PP
+
+.SS "void com\&.Library\&.Database\&.DatabaseManager\&.registerUserSafe (String query, String name, String surname, String nickname, String password, String date)"
+Metoda vytvoří SQL s opatřením proti SQL injection\&. Executne command vůči DB\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIquery\fP SQL 
+.br
+\fIname\fP Jméno 
+.br
+\fIsurname\fP Přijmení 
+.br
+\fInickname\fP Nickname 
+.br
+\fIpassword\fP Heslo 
+.br
+\fIdate\fP Datum narození 
+.RE
+.PP
+
+.SS "void com\&.Library\&.Database\&.DatabaseManager\&.setOrderSafe (String query, String nickname, String contact, String address, String books)"
+Metoda vztváří záznam v databázi Order\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIquery\fP SQL 
+.br
+\fInickname\fP Nicname 
+.br
+\fIcontact\fP Kontakt 
+.br
+\fIaddress\fP Adresa 
+.br
+\fIbooks\fP Košík knih 
+.RE
+.PP
+
+.SS "void com\&.Library\&.Database\&.DatabaseManager\&.setUserPermissions (String query, String name, String type)"
+Metoda pro nastavení oprávnění\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIquery\fP SQL 
+.br
+\fIname\fP Jméno 
+.br
+\fItype\fP Nový typ 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generováno automaticky programem Doxygen ze zdrojových textů projektu Dokumentace BookLibrary\&.

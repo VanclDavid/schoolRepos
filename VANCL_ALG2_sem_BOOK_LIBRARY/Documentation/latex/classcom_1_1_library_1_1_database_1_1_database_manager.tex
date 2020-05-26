@@ -1,0 +1,199 @@
+\hypertarget{classcom_1_1_library_1_1_database_1_1_database_manager}{}\doxysection{Dokumentace třídy com.\+Library.\+Database.\+Database\+Manager}
+\label{classcom_1_1_library_1_1_database_1_1_database_manager}\index{com.Library.Database.DatabaseManager@{com.Library.Database.DatabaseManager}}
+
+
+Třída manipulující s databází.  
+
+
+Diagram dědičnosti pro třídu com.\+Library.\+Database.\+Database\+Manager\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1_library_1_1_database_1_1_database_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1_library_1_1_database_1_1_database_manager_a44357ca49c6be4032b4943cde1a990e6}{Database\+Manager}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1_library_1_1_database_1_1_database_manager_aa7955bbf9f8a2ce1f74979247b911af0}{close\+Connection}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1_library_1_1_database_1_1_database_manager_a501313cd1e6325650081c575c3aca5fb}{register\+User\+Safe}} (String query, String name, String surname, String nickname, String \mbox{\hyperlink{classcom_1_1_library_1_1_database_1_1_database_data_ae53a8dd41196ee6790dbe7105991591a}{password}}, String date)
+\item 
+void \mbox{\hyperlink{classcom_1_1_library_1_1_database_1_1_database_manager_a4ebaffe3953abc3341ab965eac102361}{set\+User\+Permissions}} (String query, String name, String type)
+\item 
+void \mbox{\hyperlink{classcom_1_1_library_1_1_database_1_1_database_manager_aec47fe41b37b4aaeed19059e73e38d39}{set\+Order\+Safe}} (String query, String nickname, String contact, String address, String books)
+\item 
+Result\+Set \mbox{\hyperlink{classcom_1_1_library_1_1_database_1_1_database_manager_a8a82c65444a93412a614d21fe8ab93c3}{get\+User\+Exists\+Safe}} (String query, String nickname)
+\item 
+Result\+Set \mbox{\hyperlink{classcom_1_1_library_1_1_database_1_1_database_manager_a81bd2fd260cb6e3589a28898e3d9ffbd}{login\+Data\+Check}} (String query, String nickname, String \mbox{\hyperlink{classcom_1_1_library_1_1_database_1_1_database_data_ae53a8dd41196ee6790dbe7105991591a}{password}})
+\item 
+Result\+Set \mbox{\hyperlink{classcom_1_1_library_1_1_database_1_1_database_manager_a0efdb1da874b5880800347c259d75da8}{get\+All\+Data}} (String query)
+\item 
+Result\+Set \mbox{\hyperlink{classcom_1_1_library_1_1_database_1_1_database_manager_acdccf44b665f2037bbcbdc22bd2c083c}{get\+Dynamic\+Data}} (String query, Array\+List$<$ String $>$ params)
+\end{DoxyCompactItemize}
+\doxysubsection*{Další zděděné členy}
+
+
+\doxysubsection{Detailní popis}
+Třída manipulující s databází. 
+
+\begin{DoxySeeAlso}{Viz také}
+\mbox{\hyperlink{classcom_1_1_library_1_1_database_1_1_database_data}{Database\+Data}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Dokumentace konstruktoru a destruktoru}
+\mbox{\Hypertarget{classcom_1_1_library_1_1_database_1_1_database_manager_a44357ca49c6be4032b4943cde1a990e6}\label{classcom_1_1_library_1_1_database_1_1_database_manager_a44357ca49c6be4032b4943cde1a990e6}} 
+\index{com.Library.Database.DatabaseManager@{com.Library.Database.DatabaseManager}!DatabaseManager@{DatabaseManager}}
+\index{DatabaseManager@{DatabaseManager}!com.Library.Database.DatabaseManager@{com.Library.Database.DatabaseManager}}
+\doxysubsubsection{\texorpdfstring{DatabaseManager()}{DatabaseManager()}}
+{\footnotesize\ttfamily com.\+Library.\+Database.\+Database\+Manager.\+Database\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda vztvoří spojení s databází. 
+
+\doxysubsection{Dokumentace k metodám}
+\mbox{\Hypertarget{classcom_1_1_library_1_1_database_1_1_database_manager_aa7955bbf9f8a2ce1f74979247b911af0}\label{classcom_1_1_library_1_1_database_1_1_database_manager_aa7955bbf9f8a2ce1f74979247b911af0}} 
+\index{com.Library.Database.DatabaseManager@{com.Library.Database.DatabaseManager}!closeConnection@{closeConnection}}
+\index{closeConnection@{closeConnection}!com.Library.Database.DatabaseManager@{com.Library.Database.DatabaseManager}}
+\doxysubsubsection{\texorpdfstring{closeConnection()}{closeConnection()}}
+{\footnotesize\ttfamily void com.\+Library.\+Database.\+Database\+Manager.\+close\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Uzavírá spojení s databaází. \mbox{\Hypertarget{classcom_1_1_library_1_1_database_1_1_database_manager_a0efdb1da874b5880800347c259d75da8}\label{classcom_1_1_library_1_1_database_1_1_database_manager_a0efdb1da874b5880800347c259d75da8}} 
+\index{com.Library.Database.DatabaseManager@{com.Library.Database.DatabaseManager}!getAllData@{getAllData}}
+\index{getAllData@{getAllData}!com.Library.Database.DatabaseManager@{com.Library.Database.DatabaseManager}}
+\doxysubsubsection{\texorpdfstring{getAllData()}{getAllData()}}
+{\footnotesize\ttfamily Result\+Set com.\+Library.\+Database.\+Database\+Manager.\+get\+All\+Data (\begin{DoxyParamCaption}\item[{String}]{query }\end{DoxyParamCaption})}
+
+Metoda pro vzhledávání bez omezení
+
+
+\begin{DoxyParams}{Parametry}
+{\em query} & S\+QL \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Návratová hodnota}
+vrací nalezené data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1_library_1_1_database_1_1_database_manager_acdccf44b665f2037bbcbdc22bd2c083c}\label{classcom_1_1_library_1_1_database_1_1_database_manager_acdccf44b665f2037bbcbdc22bd2c083c}} 
+\index{com.Library.Database.DatabaseManager@{com.Library.Database.DatabaseManager}!getDynamicData@{getDynamicData}}
+\index{getDynamicData@{getDynamicData}!com.Library.Database.DatabaseManager@{com.Library.Database.DatabaseManager}}
+\doxysubsubsection{\texorpdfstring{getDynamicData()}{getDynamicData()}}
+{\footnotesize\ttfamily Result\+Set com.\+Library.\+Database.\+Database\+Manager.\+get\+Dynamic\+Data (\begin{DoxyParamCaption}\item[{String}]{query,  }\item[{Array\+List$<$ String $>$}]{params }\end{DoxyParamCaption})}
+
+Metoda pro dynamické vytváření S\+QL.
+
+
+\begin{DoxyParams}{Parametry}
+{\em query} & S\+QL \\
+\hline
+{\em params} & parametry \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Návratová hodnota}
+vrací nalezené data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1_library_1_1_database_1_1_database_manager_a8a82c65444a93412a614d21fe8ab93c3}\label{classcom_1_1_library_1_1_database_1_1_database_manager_a8a82c65444a93412a614d21fe8ab93c3}} 
+\index{com.Library.Database.DatabaseManager@{com.Library.Database.DatabaseManager}!getUserExistsSafe@{getUserExistsSafe}}
+\index{getUserExistsSafe@{getUserExistsSafe}!com.Library.Database.DatabaseManager@{com.Library.Database.DatabaseManager}}
+\doxysubsubsection{\texorpdfstring{getUserExistsSafe()}{getUserExistsSafe()}}
+{\footnotesize\ttfamily Result\+Set com.\+Library.\+Database.\+Database\+Manager.\+get\+User\+Exists\+Safe (\begin{DoxyParamCaption}\item[{String}]{query,  }\item[{String}]{nickname }\end{DoxyParamCaption})}
+
+Metoda ověří jestli uživatel existuje.
+
+
+\begin{DoxyParams}{Parametry}
+{\em query} & S\+QL \\
+\hline
+{\em nickname} & Nickname \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Návratová hodnota}
+data o nalezení 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1_library_1_1_database_1_1_database_manager_a81bd2fd260cb6e3589a28898e3d9ffbd}\label{classcom_1_1_library_1_1_database_1_1_database_manager_a81bd2fd260cb6e3589a28898e3d9ffbd}} 
+\index{com.Library.Database.DatabaseManager@{com.Library.Database.DatabaseManager}!loginDataCheck@{loginDataCheck}}
+\index{loginDataCheck@{loginDataCheck}!com.Library.Database.DatabaseManager@{com.Library.Database.DatabaseManager}}
+\doxysubsubsection{\texorpdfstring{loginDataCheck()}{loginDataCheck()}}
+{\footnotesize\ttfamily Result\+Set com.\+Library.\+Database.\+Database\+Manager.\+login\+Data\+Check (\begin{DoxyParamCaption}\item[{String}]{query,  }\item[{String}]{nickname,  }\item[{String}]{password }\end{DoxyParamCaption})}
+
+Ověří zadané data.
+
+
+\begin{DoxyParams}{Parametry}
+{\em query} & S\+QL \\
+\hline
+{\em nickname} & Nickname \\
+\hline
+{\em password} & Heslo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Návratová hodnota}
+vrací nalezené data. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1_library_1_1_database_1_1_database_manager_a501313cd1e6325650081c575c3aca5fb}\label{classcom_1_1_library_1_1_database_1_1_database_manager_a501313cd1e6325650081c575c3aca5fb}} 
+\index{com.Library.Database.DatabaseManager@{com.Library.Database.DatabaseManager}!registerUserSafe@{registerUserSafe}}
+\index{registerUserSafe@{registerUserSafe}!com.Library.Database.DatabaseManager@{com.Library.Database.DatabaseManager}}
+\doxysubsubsection{\texorpdfstring{registerUserSafe()}{registerUserSafe()}}
+{\footnotesize\ttfamily void com.\+Library.\+Database.\+Database\+Manager.\+register\+User\+Safe (\begin{DoxyParamCaption}\item[{String}]{query,  }\item[{String}]{name,  }\item[{String}]{surname,  }\item[{String}]{nickname,  }\item[{String}]{password,  }\item[{String}]{date }\end{DoxyParamCaption})}
+
+Metoda vytvoří S\+QL s opatřením proti S\+QL injection. Executne command vůči DB.
+
+
+\begin{DoxyParams}{Parametry}
+{\em query} & S\+QL \\
+\hline
+{\em name} & Jméno \\
+\hline
+{\em surname} & Přijmení \\
+\hline
+{\em nickname} & Nickname \\
+\hline
+{\em password} & Heslo \\
+\hline
+{\em date} & Datum narození \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1_library_1_1_database_1_1_database_manager_aec47fe41b37b4aaeed19059e73e38d39}\label{classcom_1_1_library_1_1_database_1_1_database_manager_aec47fe41b37b4aaeed19059e73e38d39}} 
+\index{com.Library.Database.DatabaseManager@{com.Library.Database.DatabaseManager}!setOrderSafe@{setOrderSafe}}
+\index{setOrderSafe@{setOrderSafe}!com.Library.Database.DatabaseManager@{com.Library.Database.DatabaseManager}}
+\doxysubsubsection{\texorpdfstring{setOrderSafe()}{setOrderSafe()}}
+{\footnotesize\ttfamily void com.\+Library.\+Database.\+Database\+Manager.\+set\+Order\+Safe (\begin{DoxyParamCaption}\item[{String}]{query,  }\item[{String}]{nickname,  }\item[{String}]{contact,  }\item[{String}]{address,  }\item[{String}]{books }\end{DoxyParamCaption})}
+
+Metoda vztváří záznam v databázi Order.
+
+
+\begin{DoxyParams}{Parametry}
+{\em query} & S\+QL \\
+\hline
+{\em nickname} & Nicname \\
+\hline
+{\em contact} & Kontakt \\
+\hline
+{\em address} & Adresa \\
+\hline
+{\em books} & Košík knih \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1_library_1_1_database_1_1_database_manager_a4ebaffe3953abc3341ab965eac102361}\label{classcom_1_1_library_1_1_database_1_1_database_manager_a4ebaffe3953abc3341ab965eac102361}} 
+\index{com.Library.Database.DatabaseManager@{com.Library.Database.DatabaseManager}!setUserPermissions@{setUserPermissions}}
+\index{setUserPermissions@{setUserPermissions}!com.Library.Database.DatabaseManager@{com.Library.Database.DatabaseManager}}
+\doxysubsubsection{\texorpdfstring{setUserPermissions()}{setUserPermissions()}}
+{\footnotesize\ttfamily void com.\+Library.\+Database.\+Database\+Manager.\+set\+User\+Permissions (\begin{DoxyParamCaption}\item[{String}]{query,  }\item[{String}]{name,  }\item[{String}]{type }\end{DoxyParamCaption})}
+
+Metoda pro nastavení oprávnění.
+
+
+\begin{DoxyParams}{Parametry}
+{\em query} & S\+QL \\
+\hline
+{\em name} & Jméno \\
+\hline
+{\em type} & Nový typ \\
+\hline
+\end{DoxyParams}
+
+
+Dokumentace pro tuto třídu byla generována z následujícího souboru\+:\begin{DoxyCompactItemize}
+\item 
+Database/\mbox{\hyperlink{_database_manager_8java}{Database\+Manager.\+java}}\end{DoxyCompactItemize}

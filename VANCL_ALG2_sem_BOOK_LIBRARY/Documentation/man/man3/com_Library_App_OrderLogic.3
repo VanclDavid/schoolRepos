@@ -1,0 +1,62 @@
+.TH "com.Library.App.OrderLogic" 3 "ne 17. kvě 2020" "Version 1" "Dokumentace BookLibrary" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.Library.App.OrderLogic \- Logika objednávky\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Statické veřejné metody"
+
+.in +1c
+.ti -1c
+.RI "static boolean \fBcheckPassword\fP (String nickname, String password)"
+.br
+.ti -1c
+.RI "static boolean \fBwriteOrder\fP (String nickname, String contact, String address)"
+.br
+.in -1c
+.SH "Detailní popis"
+.PP 
+Logika objednávky\&. 
+.SH "Dokumentace k metodám"
+.PP 
+.SS "static boolean com\&.Library\&.App\&.OrderLogic\&.checkPassword (String nickname, String password)\fC [static]\fP"
+Metoda na ověření uživatele\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fInickname\fP Nickname přihlášeného uživatele\&. 
+.br
+\fIpassword\fP Heslo přihlášeného uživatele\&. 
+.RE
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+vrací true/false 
+.RE
+.PP
+
+.SS "static boolean com\&.Library\&.App\&.OrderLogic\&.writeOrder (String nickname, String contact, String address)\fC [static]\fP"
+Metoda pro zápis obědnávky
+.PP
+\fBParametry\fP
+.RS 4
+\fInickname\fP Nickanme uživatele\&. 
+.br
+\fIcontact\fP Kontakt na uživatele\&. 
+.br
+\fIaddress\fP Adresa uživatele\&. 
+.RE
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+vrátí true/false podle toho zda byla objednávka zapsána nebo ne\&. 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generováno automaticky programem Doxygen ze zdrojových textů projektu Dokumentace BookLibrary\&.

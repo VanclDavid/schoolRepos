@@ -1,0 +1,116 @@
+.TH "com.Library.Utils.ItemTemplate" 3 "ne 17. kvě 2020" "Version 1" "Dokumentace BookLibrary" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.Library.Utils.ItemTemplate \- Třída definující itemy\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Dědí z bázových tříd JPanel a MouseListener\&.
+.PP
+Zděděna třídami \fBcom\&.Library\&.Utils\&.CartItem\fP a \fBcom\&.Library\&.Utils\&.ListedItem\fP\&.
+.SS "Veřejné metody"
+
+.in +1c
+.ti -1c
+.RI "\fBItemTemplate\fP ()"
+.br
+.ti -1c
+.RI "String \fBgetBookWriter\fP ()"
+.br
+.ti -1c
+.RI "String \fBgetBookName\fP ()"
+.br
+.in -1c
+.SS "Chráněné metody"
+
+.in +1c
+.ti -1c
+.RI "void \fBloadParams\fP (String[] \fBparams\fP)"
+.br
+.in -1c
+.SS "Chráněné atributy"
+
+.in +1c
+.ti -1c
+.RI "JTextField \fBwriter\fP"
+.br
+.ti -1c
+.RI "JTextField \fBname\fP"
+.br
+.ti -1c
+.RI "JTextField \fBfield\fP"
+.br
+.ti -1c
+.RI "JTextField \fBpublisher\fP"
+.br
+.ti -1c
+.RI "JTextField \fBpublisherYear\fP"
+.br
+.ti -1c
+.RI "JTextField \fBpublisherNumber\fP"
+.br
+.ti -1c
+.RI "String[] \fBparams\fP"
+.br
+.in -1c
+.SH "Detailní popis"
+.PP 
+Třída definující itemy\&. 
+
+Obsahuje jednotlivé pole a labely\&. 
+.SH "Dokumentace konstruktoru a destruktoru"
+.PP 
+.SS "com\&.Library\&.Utils\&.ItemTemplate\&.ItemTemplate ()"
+Konstruktor třídy\&. Nastaví vzhled Tabu\&. 
+.SH "Dokumentace k metodám"
+.PP 
+.SS "String com\&.Library\&.Utils\&.ItemTemplate\&.getBookName ()"
+
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+jméno knihy 
+.RE
+.PP
+
+.SS "String com\&.Library\&.Utils\&.ItemTemplate\&.getBookWriter ()"
+
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+spisovatel knihy 
+.RE
+.PP
+
+.SS "void com\&.Library\&.Utils\&.ItemTemplate\&.loadParams (String[] params)\fC [protected]\fP"
+Přiřazení dat k položkám\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIparams\fP data 
+.RE
+.PP
+
+.SH "Dokumentace k datovým členům"
+.PP 
+.SS "JTextField com\&.Library\&.Utils\&.ItemTemplate\&.field\fC [protected]\fP"
+Pole, obor\&. 
+.SS "JTextField com\&.Library\&.Utils\&.ItemTemplate\&.name\fC [protected]\fP"
+Pole pro jméno knihy\&. 
+.SS "String [] com\&.Library\&.Utils\&.ItemTemplate\&.params\fC [protected]\fP"
+Parametry knihy\&. 
+.SS "JTextField com\&.Library\&.Utils\&.ItemTemplate\&.publisher\fC [protected]\fP"
+Pole, vydavatele knihy\&. 
+.SS "JTextField com\&.Library\&.Utils\&.ItemTemplate\&.publisherNumber\fC [protected]\fP"
+Pole, číslo vydání\&. 
+.SS "JTextField com\&.Library\&.Utils\&.ItemTemplate\&.publisherYear\fC [protected]\fP"
+Pole, rok vydání knihy\&. 
+.SS "JTextField com\&.Library\&.Utils\&.ItemTemplate\&.writer\fC [protected]\fP"
+Pole pro spisovatele\&. 
+
+.SH "Autor"
+.PP 
+Generováno automaticky programem Doxygen ze zdrojových textů projektu Dokumentace BookLibrary\&.

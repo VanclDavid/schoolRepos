@@ -1,0 +1,154 @@
+\hypertarget{classcom_1_1_library_1_1_utils_1_1_file_manager}{}\doxysection{Dokumentace třídy com.\+Library.\+Utils.\+File\+Manager}
+\label{classcom_1_1_library_1_1_utils_1_1_file_manager}\index{com.Library.Utils.FileManager@{com.Library.Utils.FileManager}}
+
+
+Abstratkní třída pro manipulaci se soubory.  
+
+
+\doxysubsection*{Statické veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classcom_1_1_library_1_1_utils_1_1_file_manager_ae936ace8bc5465e3dfe3de2006662488}{log}} (String text\+To\+Log)
+\item 
+static void \mbox{\hyperlink{classcom_1_1_library_1_1_utils_1_1_file_manager_af20e9233d3ef55f24bd95b86a71a872e}{save\+Clip\+Board}} (String\mbox{[}$\,$\mbox{]} params)
+\item 
+static void \mbox{\hyperlink{classcom_1_1_library_1_1_utils_1_1_file_manager_ac08e44bd0c1ed72e184db44a9178260e}{set\+System\+Clip\+Board}} (String string\+To\+Save)
+\item 
+static void \mbox{\hyperlink{classcom_1_1_library_1_1_utils_1_1_file_manager_ad4c7f7632b5804dceae7872cc2550463}{clear\+Clip\+Board}} ()
+\item 
+static void \mbox{\hyperlink{classcom_1_1_library_1_1_utils_1_1_file_manager_ae0097fdbb163be03f1b2dd0a69843e02}{set\+Key}} (String my\+Key)
+\item 
+static void \mbox{\hyperlink{classcom_1_1_library_1_1_utils_1_1_file_manager_ac699af4ca3d161d7ea28c22ad22151e4}{encrypt}} (String str\+To\+Encrypt, String secret)
+\item 
+static String \mbox{\hyperlink{classcom_1_1_library_1_1_utils_1_1_file_manager_a5dee5282810e308800473cc5620f7804}{decrypt}} (String secret)
+\item 
+static void \mbox{\hyperlink{classcom_1_1_library_1_1_utils_1_1_file_manager_a7e5bb80ff50063442f9270876e35c43d}{remove\+Character\+Data}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Statické veřejné atributy}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classcom_1_1_library_1_1_utils_1_1_file_manager_ac56c4d15932afaa84d9960f333a23029}{path\+To\+User\+Data}} = System.\+getenv(\char`\"{}A\+P\+P\+D\+A\+TA\char`\"{}) + \char`\"{}\textbackslash{}\textbackslash{}Book\+Library\textbackslash{}\textbackslash{}logged\+User.\+txt\char`\"{}
+\item 
+static String \mbox{\hyperlink{classcom_1_1_library_1_1_utils_1_1_file_manager_a3c1dbd718d09d7892cd2b156884ddd47}{path\+To\+Clip\+Board}} = System.\+getenv(\char`\"{}A\+P\+P\+D\+A\+TA\char`\"{}) + \char`\"{}\textbackslash{}\textbackslash{}Book\+Library\textbackslash{}\textbackslash{}clip\+Board.\+txt\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailní popis}
+Abstratkní třída pro manipulaci se soubory. 
+
+\doxysubsection{Dokumentace k metodám}
+\mbox{\Hypertarget{classcom_1_1_library_1_1_utils_1_1_file_manager_ad4c7f7632b5804dceae7872cc2550463}\label{classcom_1_1_library_1_1_utils_1_1_file_manager_ad4c7f7632b5804dceae7872cc2550463}} 
+\index{com.Library.Utils.FileManager@{com.Library.Utils.FileManager}!clearClipBoard@{clearClipBoard}}
+\index{clearClipBoard@{clearClipBoard}!com.Library.Utils.FileManager@{com.Library.Utils.FileManager}}
+\doxysubsubsection{\texorpdfstring{clearClipBoard()}{clearClipBoard()}}
+{\footnotesize\ttfamily static void com.\+Library.\+Utils.\+File\+Manager.\+clear\+Clip\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Vymaže clipboard. \mbox{\Hypertarget{classcom_1_1_library_1_1_utils_1_1_file_manager_a5dee5282810e308800473cc5620f7804}\label{classcom_1_1_library_1_1_utils_1_1_file_manager_a5dee5282810e308800473cc5620f7804}} 
+\index{com.Library.Utils.FileManager@{com.Library.Utils.FileManager}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!com.Library.Utils.FileManager@{com.Library.Utils.FileManager}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily static String com.\+Library.\+Utils.\+File\+Manager.\+decrypt (\begin{DoxyParamCaption}\item[{String}]{secret }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Dešifruje text.
+
+
+\begin{DoxyParams}{Parametry}
+{\em secret} & text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Návratová hodnota}
+nešifrovaný text 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1_library_1_1_utils_1_1_file_manager_ac699af4ca3d161d7ea28c22ad22151e4}\label{classcom_1_1_library_1_1_utils_1_1_file_manager_ac699af4ca3d161d7ea28c22ad22151e4}} 
+\index{com.Library.Utils.FileManager@{com.Library.Utils.FileManager}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!com.Library.Utils.FileManager@{com.Library.Utils.FileManager}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily static void com.\+Library.\+Utils.\+File\+Manager.\+encrypt (\begin{DoxyParamCaption}\item[{String}]{str\+To\+Encrypt,  }\item[{String}]{secret }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Zašifrování dat podle klíče.
+
+
+\begin{DoxyParams}{Parametry}
+{\em str\+To\+Encrypt} & text k zašifrování \\
+\hline
+{\em secret} & klíč \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1_library_1_1_utils_1_1_file_manager_ae936ace8bc5465e3dfe3de2006662488}\label{classcom_1_1_library_1_1_utils_1_1_file_manager_ae936ace8bc5465e3dfe3de2006662488}} 
+\index{com.Library.Utils.FileManager@{com.Library.Utils.FileManager}!log@{log}}
+\index{log@{log}!com.Library.Utils.FileManager@{com.Library.Utils.FileManager}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily static void com.\+Library.\+Utils.\+File\+Manager.\+log (\begin{DoxyParamCaption}\item[{String}]{text\+To\+Log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Metoda pro logování aplikace.
+
+
+\begin{DoxyParams}{Parametry}
+{\em text\+To\+Log} & Text k zalogování. Přidá prefix k log textu \mbox{\hyperlink{}{prefix\+Data()}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1_library_1_1_utils_1_1_file_manager_a7e5bb80ff50063442f9270876e35c43d}\label{classcom_1_1_library_1_1_utils_1_1_file_manager_a7e5bb80ff50063442f9270876e35c43d}} 
+\index{com.Library.Utils.FileManager@{com.Library.Utils.FileManager}!removeCharacterData@{removeCharacterData}}
+\index{removeCharacterData@{removeCharacterData}!com.Library.Utils.FileManager@{com.Library.Utils.FileManager}}
+\doxysubsubsection{\texorpdfstring{removeCharacterData()}{removeCharacterData()}}
+{\footnotesize\ttfamily static void com.\+Library.\+Utils.\+File\+Manager.\+remove\+Character\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Smaže soubor s uloženým uživatelem. \mbox{\Hypertarget{classcom_1_1_library_1_1_utils_1_1_file_manager_af20e9233d3ef55f24bd95b86a71a872e}\label{classcom_1_1_library_1_1_utils_1_1_file_manager_af20e9233d3ef55f24bd95b86a71a872e}} 
+\index{com.Library.Utils.FileManager@{com.Library.Utils.FileManager}!saveClipBoard@{saveClipBoard}}
+\index{saveClipBoard@{saveClipBoard}!com.Library.Utils.FileManager@{com.Library.Utils.FileManager}}
+\doxysubsubsection{\texorpdfstring{saveClipBoard()}{saveClipBoard()}}
+{\footnotesize\ttfamily static void com.\+Library.\+Utils.\+File\+Manager.\+save\+Clip\+Board (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Metoda pro ukládání do clipboardu.
+
+
+\begin{DoxyParams}{Parametry}
+{\em params} & data o položce \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1_library_1_1_utils_1_1_file_manager_ae0097fdbb163be03f1b2dd0a69843e02}\label{classcom_1_1_library_1_1_utils_1_1_file_manager_ae0097fdbb163be03f1b2dd0a69843e02}} 
+\index{com.Library.Utils.FileManager@{com.Library.Utils.FileManager}!setKey@{setKey}}
+\index{setKey@{setKey}!com.Library.Utils.FileManager@{com.Library.Utils.FileManager}}
+\doxysubsubsection{\texorpdfstring{setKey()}{setKey()}}
+{\footnotesize\ttfamily static void com.\+Library.\+Utils.\+File\+Manager.\+set\+Key (\begin{DoxyParamCaption}\item[{String}]{my\+Key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Nastaví klíč šifrování.
+
+
+\begin{DoxyParams}{Parametry}
+{\em my\+Key} & klíč \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1_library_1_1_utils_1_1_file_manager_ac08e44bd0c1ed72e184db44a9178260e}\label{classcom_1_1_library_1_1_utils_1_1_file_manager_ac08e44bd0c1ed72e184db44a9178260e}} 
+\index{com.Library.Utils.FileManager@{com.Library.Utils.FileManager}!setSystemClipBoard@{setSystemClipBoard}}
+\index{setSystemClipBoard@{setSystemClipBoard}!com.Library.Utils.FileManager@{com.Library.Utils.FileManager}}
+\doxysubsubsection{\texorpdfstring{setSystemClipBoard()}{setSystemClipBoard()}}
+{\footnotesize\ttfamily static void com.\+Library.\+Utils.\+File\+Manager.\+set\+System\+Clip\+Board (\begin{DoxyParamCaption}\item[{String}]{string\+To\+Save }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Metoda pro nastavení do clipboardu.
+
+
+\begin{DoxyParams}{Parametry}
+{\em string\+To\+Save} & data \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentace k datovým členům}
+\mbox{\Hypertarget{classcom_1_1_library_1_1_utils_1_1_file_manager_a3c1dbd718d09d7892cd2b156884ddd47}\label{classcom_1_1_library_1_1_utils_1_1_file_manager_a3c1dbd718d09d7892cd2b156884ddd47}} 
+\index{com.Library.Utils.FileManager@{com.Library.Utils.FileManager}!pathToClipBoard@{pathToClipBoard}}
+\index{pathToClipBoard@{pathToClipBoard}!com.Library.Utils.FileManager@{com.Library.Utils.FileManager}}
+\doxysubsubsection{\texorpdfstring{pathToClipBoard}{pathToClipBoard}}
+{\footnotesize\ttfamily String com.\+Library.\+Utils.\+File\+Manager.\+path\+To\+Clip\+Board = System.\+getenv(\char`\"{}A\+P\+P\+D\+A\+TA\char`\"{}) + \char`\"{}\textbackslash{}\textbackslash{}Book\+Library\textbackslash{}\textbackslash{}clip\+Board.\+txt\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+Statická cesta ke zkopírovaným informacem. \mbox{\Hypertarget{classcom_1_1_library_1_1_utils_1_1_file_manager_ac56c4d15932afaa84d9960f333a23029}\label{classcom_1_1_library_1_1_utils_1_1_file_manager_ac56c4d15932afaa84d9960f333a23029}} 
+\index{com.Library.Utils.FileManager@{com.Library.Utils.FileManager}!pathToUserData@{pathToUserData}}
+\index{pathToUserData@{pathToUserData}!com.Library.Utils.FileManager@{com.Library.Utils.FileManager}}
+\doxysubsubsection{\texorpdfstring{pathToUserData}{pathToUserData}}
+{\footnotesize\ttfamily String com.\+Library.\+Utils.\+File\+Manager.\+path\+To\+User\+Data = System.\+getenv(\char`\"{}A\+P\+P\+D\+A\+TA\char`\"{}) + \char`\"{}\textbackslash{}\textbackslash{}Book\+Library\textbackslash{}\textbackslash{}logged\+User.\+txt\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+Statická cesta k přihlášenému uživateli. 
+
+Dokumentace pro tuto třídu byla generována z následujícího souboru\+:\begin{DoxyCompactItemize}
+\item 
+Utils/\mbox{\hyperlink{_file_manager_8java}{File\+Manager.\+java}}\end{DoxyCompactItemize}

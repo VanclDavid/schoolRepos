@@ -1,0 +1,96 @@
+.TH "com.Library.Utils.ListedItem" 3 "ne 17. kvě 2020" "Version 1" "Dokumentace BookLibrary" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.Library.Utils.ListedItem \- Třída vykreslující item ve vyhledávání\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Dědí z bázové třídy \fBcom\&.Library\&.Utils\&.ItemTemplate\fP\&.
+.SS "Veřejné metody"
+
+.in +1c
+.ti -1c
+.RI "\fBListedItem\fP (\fBListLibrary\fP library, String[] \fBparams\fP)"
+.br
+.ti -1c
+.RI "void \fBmouseClicked\fP (MouseEvent e)"
+.br
+.ti -1c
+.RI "void \fBmousePressed\fP (MouseEvent e)"
+.br
+.ti -1c
+.RI "void \fBmouseReleased\fP (MouseEvent e)"
+.br
+.ti -1c
+.RI "void \fBmouseEntered\fP (MouseEvent e)"
+.br
+.ti -1c
+.RI "void \fBmouseExited\fP (MouseEvent e)"
+.br
+.in -1c
+.SS "Další zděděné členy"
+.SH "Detailní popis"
+.PP 
+Třída vykreslující item ve vyhledávání\&. 
+
+
+.PP
+\fBViz také\fP
+.RS 4
+\fBItemTemplate\fP 
+.RE
+.PP
+
+.SH "Dokumentace konstruktoru a destruktoru"
+.PP 
+.SS "com\&.Library\&.Utils\&.ListedItem\&.ListedItem (\fBListLibrary\fP library, String[] params)"
+Konstruktor \fBListedItem\fP\&. Sestaví item do prohlížeče\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIlibrary\fP nadřazené okno 
+.br
+\fIparams\fP data o itemu 
+.RE
+.PP
+
+.SH "Dokumentace k metodám"
+.PP 
+.SS "void com\&.Library\&.Utils\&.ListedItem\&.mouseClicked (MouseEvent e)"
+Click na item, zkopíruje data a přidá položku do košíku\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIe\fP click parameter 
+.RE
+.PP
+
+.SS "void com\&.Library\&.Utils\&.ListedItem\&.mouseEntered (MouseEvent e)"
+Přebarvení při najetí na objekt\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIe\fP mouse event 
+.RE
+.PP
+
+.SS "void com\&.Library\&.Utils\&.ListedItem\&.mouseExited (MouseEvent e)"
+Přebarvení při odjetí na objekt\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIe\fP mouse event 
+.RE
+.PP
+
+.SS "void com\&.Library\&.Utils\&.ListedItem\&.mousePressed (MouseEvent e)"
+
+.SS "void com\&.Library\&.Utils\&.ListedItem\&.mouseReleased (MouseEvent e)"
+
+
+.SH "Autor"
+.PP 
+Generováno automaticky programem Doxygen ze zdrojových textů projektu Dokumentace BookLibrary\&.

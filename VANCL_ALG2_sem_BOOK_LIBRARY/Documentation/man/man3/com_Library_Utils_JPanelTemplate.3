@@ -1,0 +1,299 @@
+.TH "com.Library.Utils.JPanelTemplate" 3 "ne 17. kvě 2020" "Version 1" "Dokumentace BookLibrary" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.Library.Utils.JPanelTemplate \- Třída \fBJPanelTemplate\fP slouží jako podklad do záložek\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Dědí z bázových tříd JPanel a com\&.Library\&.Utils\&.JPanelInterface\&.
+.PP
+Zděděna třídami \fBcom\&.Library\&.GUI\&.Cart\fP, \fBcom\&.Library\&.GUI\&.ListLibrary\fP, \fBcom\&.Library\&.GUI\&.Login\fP, \fBcom\&.Library\&.GUI\&.Menu\fP, \fBcom\&.Library\&.GUI\&.Order\fP a \fBcom\&.Library\&.GUI\&.Register\fP\&.
+.SS "Veřejné metody"
+
+.in +1c
+.ti -1c
+.RI "\fBJPanelTemplate\fP (int \fBwidth\fP, int \fBheight\fP, boolean \fBisVisible\fP)"
+.br
+.ti -1c
+.RI "int \fBgetWidth\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetHeight\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetWidth\fP (int newWidth)"
+.br
+.ti -1c
+.RI "void \fBsetHeight\fP (int newHeight)"
+.br
+.ti -1c
+.RI "void \fBpaintComponent\fP (Graphics g)"
+.br
+.in -1c
+.SS "Chráněné metody"
+
+.in +1c
+.ti -1c
+.RI "ImageIcon \fBloadImageFromPackage\fP (String packageImage)"
+.br
+.ti -1c
+.RI "ImageIcon \fBloadImageFromPackage\fP (String packageImage, int x, int y)"
+.br
+.ti -1c
+.RI "void \fBdynamicUpgrade\fP (JButton button)"
+.br
+.ti -1c
+.RI "JTextField \fBcustomJTextField\fP ()"
+.br
+.ti -1c
+.RI "JPasswordField \fBcustomJPasswordField\fP ()"
+.br
+.ti -1c
+.RI "JLabel \fBcustomJLabel\fP (String text, int size)"
+.br
+.ti -1c
+.RI "void \fBshowSuccessAlert\fP (String text)"
+.br
+.ti -1c
+.RI "void \fBshowDangerAlert\fP (String text)"
+.br
+.in -1c
+.SS "Chráněné atributy"
+
+.in +1c
+.ti -1c
+.RI "int \fBbuttonsWidth\fP = 190"
+.br
+.ti -1c
+.RI "int \fBbuttonsHeight\fP = 50"
+.br
+.ti -1c
+.RI "Image \fBtest\fP"
+.br
+.ti -1c
+.RI "int \fBwidth\fP"
+.br
+.ti -1c
+.RI "int \fBheight\fP"
+.br
+.ti -1c
+.RI "boolean \fBisVisible\fP"
+.br
+.ti -1c
+.RI "Image \fBinputImage\fP = null"
+.br
+.in -1c
+.SH "Detailní popis"
+.PP 
+Třída \fBJPanelTemplate\fP slouží jako podklad do záložek\&. 
+
+
+.PP
+\fBViz také\fP
+.RS 4
+\fBcom\&.Library\&.GUI\&.Menu\fP 
+.PP
+\fBcom\&.Library\&.GUI\&.Cart\fP 
+.PP
+\fBcom\&.Library\&.GUI\&.Register\fP 
+.PP
+\fBcom\&.Library\&.GUI\&.Order\fP 
+.PP
+\fBcom\&.Library\&.GUI\&.Login\fP 
+.PP
+\fBcom\&.Library\&.GUI\&.ListLibrary\fP 
+.RE
+.PP
+Implementuje JPanelInterface 
+.PP
+\fBViz také\fP
+.RS 4
+JPanelInterface 
+.RE
+.PP
+Dědí z třídy JPanel 
+.PP
+\fBViz také\fP
+.RS 4
+JPanel 
+.RE
+.PP
+
+.SH "Dokumentace konstruktoru a destruktoru"
+.PP 
+.SS "com\&.Library\&.Utils\&.JPanelTemplate\&.JPanelTemplate (int width, int height, boolean isVisible)"
+Konstruktor třídy \fBJPanelTemplate\fP Nastaví základní parametry panelu\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIwidth\fP šířka okna 
+.br
+\fIheight\fP výška okna 
+.br
+\fIisVisible\fP viditelnost okna 
+.RE
+.PP
+
+.SH "Dokumentace k metodám"
+.PP 
+.SS "JLabel com\&.Library\&.Utils\&.JPanelTemplate\&.customJLabel (String text, int size)\fC [protected]\fP"
+Funkce připravující label na nadpisy\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fItext\fP text do nadpisu 
+.br
+\fIsize\fP velikost textu 
+.RE
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+vrátí nadpis, JLabel 
+.RE
+.PP
+
+.SS "JPasswordField com\&.Library\&.Utils\&.JPanelTemplate\&.customJPasswordField ()\fC [protected]\fP"
+Vytvoří graficky upravený JPasswordField
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+vrátí předpřipravený password input 
+.RE
+.PP
+
+.SS "JTextField com\&.Library\&.Utils\&.JPanelTemplate\&.customJTextField ()\fC [protected]\fP"
+Vytvoří graficky upravený JTextField
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+vrátí předpřipravený input 
+.RE
+.PP
+
+.SS "void com\&.Library\&.Utils\&.JPanelTemplate\&.dynamicUpgrade (JButton button)\fC [protected]\fP"
+Metoda na grafickou úpravu tlačítka\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIbutton\fP tlačítko na úpravu 
+.RE
+.PP
+
+.SS "int com\&.Library\&.Utils\&.JPanelTemplate\&.getHeight ()"
+
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+výšku aplikace 
+.RE
+.PP
+
+.SS "int com\&.Library\&.Utils\&.JPanelTemplate\&.getWidth ()"
+
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+šířku aplikace 
+.RE
+.PP
+
+.SS "ImageIcon com\&.Library\&.Utils\&.JPanelTemplate\&.loadImageFromPackage (String packageImage)\fC [protected]\fP"
+Přetížená metoda na načtení obrázku\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIpackageImage\fP Cesta k obrázku\&. 
+.RE
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+ImageIcon 
+.RE
+.PP
+
+.SS "ImageIcon com\&.Library\&.Utils\&.JPanelTemplate\&.loadImageFromPackage (String packageImage, int x, int y)\fC [protected]\fP"
+Metoda na načtení obrázku\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIpackageImage\fP cesta 
+.br
+\fIx\fP šířka 
+.br
+\fIy\fP výška 
+.RE
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+ImageIcon 
+.RE
+.PP
+
+.SS "void com\&.Library\&.Utils\&.JPanelTemplate\&.paintComponent (Graphics g)"
+Metoda na vykreslení pozadí\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIg\fP 
+.RE
+.PP
+
+.SS "void com\&.Library\&.Utils\&.JPanelTemplate\&.setHeight (int newHeight)"
+Nastaví novou výšku aplikace\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fInewHeight\fP výška 
+.RE
+.PP
+
+.SS "void com\&.Library\&.Utils\&.JPanelTemplate\&.setWidth (int newWidth)"
+Nastaví novou šířku okna
+.PP
+\fBParametry\fP
+.RS 4
+\fInewWidth\fP šířka 
+.RE
+.PP
+
+.SS "void com\&.Library\&.Utils\&.JPanelTemplate\&.showDangerAlert (String text)\fC [protected]\fP"
+Metoda automaticky skrývající negativní alert po intervalu\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fItext\fP Zpráva 
+.RE
+.PP
+
+.SS "void com\&.Library\&.Utils\&.JPanelTemplate\&.showSuccessAlert (String text)\fC [protected]\fP"
+Metoda automaticky skrývající pozitivní alert po intervalu\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fItext\fP Zpráva 
+.RE
+.PP
+
+.SH "Dokumentace k datovým členům"
+.PP 
+.SS "int com\&.Library\&.Utils\&.JPanelTemplate\&.buttonsHeight = 50\fC [protected]\fP"
+Výška tlačítka\&. 
+.SS "int com\&.Library\&.Utils\&.JPanelTemplate\&.buttonsWidth = 190\fC [protected]\fP"
+Šířka tlačítka\&. 
+.SS "int com\&.Library\&.Utils\&.JPanelTemplate\&.height\fC [protected]\fP"
+Výška okna\&. 
+.SS "Image com\&.Library\&.Utils\&.JPanelTemplate\&.inputImage = null\fC [protected]\fP"
+Pozadí do inputů\&. 
+.SS "boolean com\&.Library\&.Utils\&.JPanelTemplate\&.isVisible\fC [protected]\fP"
+Viditelnost okna\&. 
+.SS "Image com\&.Library\&.Utils\&.JPanelTemplate\&.test\fC [protected]\fP"
+Obrázek na pozadí\&. 
+.SS "int com\&.Library\&.Utils\&.JPanelTemplate\&.width\fC [protected]\fP"
+Šířka okna\&. 
+
+.SH "Autor"
+.PP 
+Generováno automaticky programem Doxygen ze zdrojových textů projektu Dokumentace BookLibrary\&.

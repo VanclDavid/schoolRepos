@@ -1,0 +1,127 @@
+.TH "com.Library.Utils.FileManager" 3 "ne 17. kvě 2020" "Version 1" "Dokumentace BookLibrary" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.Library.Utils.FileManager \- Abstratkní třída pro manipulaci se soubory\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Statické veřejné metody"
+
+.in +1c
+.ti -1c
+.RI "static void \fBlog\fP (String textToLog)"
+.br
+.ti -1c
+.RI "static void \fBsaveClipBoard\fP (String[] params)"
+.br
+.ti -1c
+.RI "static void \fBsetSystemClipBoard\fP (String stringToSave)"
+.br
+.ti -1c
+.RI "static void \fBclearClipBoard\fP ()"
+.br
+.ti -1c
+.RI "static void \fBsetKey\fP (String myKey)"
+.br
+.ti -1c
+.RI "static void \fBencrypt\fP (String strToEncrypt, String secret)"
+.br
+.ti -1c
+.RI "static String \fBdecrypt\fP (String secret)"
+.br
+.ti -1c
+.RI "static void \fBremoveCharacterData\fP ()"
+.br
+.in -1c
+.SS "Statické veřejné atributy"
+
+.in +1c
+.ti -1c
+.RI "static String \fBpathToUserData\fP = System\&.getenv('APPDATA') + '\\\\BookLibrary\\\\loggedUser\&.txt'"
+.br
+.ti -1c
+.RI "static String \fBpathToClipBoard\fP = System\&.getenv('APPDATA') + '\\\\BookLibrary\\\\clipBoard\&.txt'"
+.br
+.in -1c
+.SH "Detailní popis"
+.PP 
+Abstratkní třída pro manipulaci se soubory\&. 
+.SH "Dokumentace k metodám"
+.PP 
+.SS "static void com\&.Library\&.Utils\&.FileManager\&.clearClipBoard ()\fC [static]\fP"
+Vymaže clipboard\&. 
+.SS "static String com\&.Library\&.Utils\&.FileManager\&.decrypt (String secret)\fC [static]\fP"
+Dešifruje text\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIsecret\fP text 
+.RE
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+nešifrovaný text 
+.RE
+.PP
+
+.SS "static void com\&.Library\&.Utils\&.FileManager\&.encrypt (String strToEncrypt, String secret)\fC [static]\fP"
+Zašifrování dat podle klíče\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIstrToEncrypt\fP text k zašifrování 
+.br
+\fIsecret\fP klíč 
+.RE
+.PP
+
+.SS "static void com\&.Library\&.Utils\&.FileManager\&.log (String textToLog)\fC [static]\fP"
+Metoda pro logování aplikace\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fItextToLog\fP Text k zalogování\&. Přidá prefix k log textu \fBprefixData()\fP 
+.RE
+.PP
+
+.SS "static void com\&.Library\&.Utils\&.FileManager\&.removeCharacterData ()\fC [static]\fP"
+Smaže soubor s uloženým uživatelem\&. 
+.SS "static void com\&.Library\&.Utils\&.FileManager\&.saveClipBoard (String[] params)\fC [static]\fP"
+Metoda pro ukládání do clipboardu\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIparams\fP data o položce 
+.RE
+.PP
+
+.SS "static void com\&.Library\&.Utils\&.FileManager\&.setKey (String myKey)\fC [static]\fP"
+Nastaví klíč šifrování\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fImyKey\fP klíč 
+.RE
+.PP
+
+.SS "static void com\&.Library\&.Utils\&.FileManager\&.setSystemClipBoard (String stringToSave)\fC [static]\fP"
+Metoda pro nastavení do clipboardu\&.
+.PP
+\fBParametry\fP
+.RS 4
+\fIstringToSave\fP data 
+.RE
+.PP
+
+.SH "Dokumentace k datovým členům"
+.PP 
+.SS "String com\&.Library\&.Utils\&.FileManager\&.pathToClipBoard = System\&.getenv('APPDATA') + '\\\\BookLibrary\\\\clipBoard\&.txt'\fC [static]\fP"
+Statická cesta ke zkopírovaným informacem\&. 
+.SS "String com\&.Library\&.Utils\&.FileManager\&.pathToUserData = System\&.getenv('APPDATA') + '\\\\BookLibrary\\\\loggedUser\&.txt'\fC [static]\fP"
+Statická cesta k přihlášenému uživateli\&. 
+
+.SH "Autor"
+.PP 
+Generováno automaticky programem Doxygen ze zdrojových textů projektu Dokumentace BookLibrary\&.

@@ -1,0 +1,319 @@
+.TH "com.Library.Accounts.AccountTemplate" 3 "ne 17. kvě 2020" "Version 1" "Dokumentace BookLibrary" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.Library.Accounts.AccountTemplate \- Třída definující šablonu uživatele\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Dědí z bázové třídy \fBcom\&.Library\&.Accounts\&.AccountInterface\fP\&.
+.PP
+Zděděna třídami \fBcom\&.Library\&.Accounts\&.ClassicUser\fP a \fBcom\&.Library\&.Accounts\&.SuperUser\fP\&.
+.SS "Veřejné metody"
+
+.in +1c
+.ti -1c
+.RI "\fBAccountTemplate\fP (String nickname)"
+.br
+.ti -1c
+.RI "String \fBgetNICKNAME\fP ()"
+.br
+.ti -1c
+.RI "String \fBgetID\fP ()"
+.br
+.ti -1c
+.RI "String \fBgetNAME\fP ()"
+.br
+.ti -1c
+.RI "String \fBgetCREATION_TIME\fP ()"
+.br
+.ti -1c
+.RI "String \fBgetMODIFICATION_DATE\fP ()"
+.br
+.ti -1c
+.RI "String \fBgetBORN\fP ()"
+.br
+.ti -1c
+.RI "String \fBgetPermissions\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBget_p_showLibrary\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBget_p_createOrder\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBget_p_createBook\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBget_p_cart\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBget_p_logOut\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBget_p_exit\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBget_p_permissions\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBget_p_manage\fP ()"
+.br
+.in -1c
+.SS "Chráněné atributy"
+
+.in +1c
+.ti -1c
+.RI "String \fBID\fP = ''"
+.br
+.ti -1c
+.RI "String \fBNAME\fP = ''"
+.br
+.ti -1c
+.RI "String \fBNICKNAME\fP = ''"
+.br
+.ti -1c
+.RI "String \fBCREATION_TIME\fP = ''"
+.br
+.ti -1c
+.RI "String \fBMODIFICATION_DATE\fP = ''"
+.br
+.ti -1c
+.RI "String \fBBORN\fP = ''"
+.br
+.ti -1c
+.RI "boolean \fBsuccessLoad\fP"
+.br
+.ti -1c
+.RI "boolean \fBp_showLibrary\fP = true"
+.br
+.ti -1c
+.RI "boolean \fBp_createOrder\fP = true"
+.br
+.ti -1c
+.RI "boolean \fBp_createBook\fP = true"
+.br
+.ti -1c
+.RI "boolean \fBp_cart\fP = true"
+.br
+.ti -1c
+.RI "boolean \fBp_logOut\fP = true"
+.br
+.ti -1c
+.RI "boolean \fBp_exit\fP = true"
+.br
+.ti -1c
+.RI "boolean \fBp_permissions\fP = false"
+.br
+.ti -1c
+.RI "boolean \fBp_manage\fP = false"
+.br
+.in -1c
+.SH "Detailní popis"
+.PP 
+Třída definující šablonu uživatele\&. 
+.SH "Dokumentace konstruktoru a destruktoru"
+.PP 
+.SS "com\&.Library\&.Accounts\&.AccountTemplate\&.AccountTemplate (String nickname)"
+Kontruktor Šablony
+.PP
+\fBParametry\fP
+.RS 4
+\fInickname\fP Nickname parametr 
+.RE
+.PP
+
+.SH "Dokumentace k metodám"
+.PP 
+.SS "boolean com\&.Library\&.Accounts\&.AccountTemplate\&.get_p_cart ()"
+
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+p_cart 
+.RE
+.PP
+
+.PP
+Reimplementuje stejnojmenný prvek z \fBcom\&.Library\&.Accounts\&.AccountInterface\fP\&.
+.SS "boolean com\&.Library\&.Accounts\&.AccountTemplate\&.get_p_createBook ()"
+
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+p_createBook 
+.RE
+.PP
+
+.PP
+Reimplementuje stejnojmenný prvek z \fBcom\&.Library\&.Accounts\&.AccountInterface\fP\&.
+.SS "boolean com\&.Library\&.Accounts\&.AccountTemplate\&.get_p_createOrder ()"
+
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+p_createOrder 
+.RE
+.PP
+
+.PP
+Reimplementuje stejnojmenný prvek z \fBcom\&.Library\&.Accounts\&.AccountInterface\fP\&.
+.SS "boolean com\&.Library\&.Accounts\&.AccountTemplate\&.get_p_exit ()"
+
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+p_exit 
+.RE
+.PP
+
+.PP
+Reimplementuje stejnojmenný prvek z \fBcom\&.Library\&.Accounts\&.AccountInterface\fP\&.
+.SS "boolean com\&.Library\&.Accounts\&.AccountTemplate\&.get_p_logOut ()"
+
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+p_logOut 
+.RE
+.PP
+
+.PP
+Reimplementuje stejnojmenný prvek z \fBcom\&.Library\&.Accounts\&.AccountInterface\fP\&.
+.SS "boolean com\&.Library\&.Accounts\&.AccountTemplate\&.get_p_manage ()"
+
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+p_manage 
+.RE
+.PP
+
+.PP
+Reimplementuje stejnojmenný prvek z \fBcom\&.Library\&.Accounts\&.AccountInterface\fP\&.
+.SS "boolean com\&.Library\&.Accounts\&.AccountTemplate\&.get_p_permissions ()"
+
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+p_permissions 
+.RE
+.PP
+
+.PP
+Reimplementuje stejnojmenný prvek z \fBcom\&.Library\&.Accounts\&.AccountInterface\fP\&.
+.SS "boolean com\&.Library\&.Accounts\&.AccountTemplate\&.get_p_showLibrary ()"
+
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+p_showLibrary 
+.RE
+.PP
+
+.PP
+Reimplementuje stejnojmenný prvek z \fBcom\&.Library\&.Accounts\&.AccountInterface\fP\&.
+.SS "String com\&.Library\&.Accounts\&.AccountTemplate\&.getBORN ()"
+
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+BORN 
+.RE
+.PP
+
+.SS "String com\&.Library\&.Accounts\&.AccountTemplate\&.getCREATION_TIME ()"
+
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+CREATION_TIME 
+.RE
+.PP
+
+.SS "String com\&.Library\&.Accounts\&.AccountTemplate\&.getID ()"
+
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+ID 
+.RE
+.PP
+
+.SS "String com\&.Library\&.Accounts\&.AccountTemplate\&.getMODIFICATION_DATE ()"
+
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+MODIFICATION_DATE 
+.RE
+.PP
+
+.SS "String com\&.Library\&.Accounts\&.AccountTemplate\&.getNAME ()"
+
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+NAME 
+.RE
+.PP
+
+.SS "String com\&.Library\&.Accounts\&.AccountTemplate\&.getNICKNAME ()"
+
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+NICKNAME 
+.RE
+.PP
+
+.SS "String com\&.Library\&.Accounts\&.AccountTemplate\&.getPermissions ()"
+
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+Oprávnění uživatele 
+.RE
+.PP
+
+.PP
+Reimplementuje stejnojmenný prvek z \fBcom\&.Library\&.Accounts\&.AccountInterface\fP\&.
+.SH "Dokumentace k datovým členům"
+.PP 
+.SS "String com\&.Library\&.Accounts\&.AccountTemplate\&.BORN = ''\fC [protected]\fP"
+BORN uživatele 
+.SS "String com\&.Library\&.Accounts\&.AccountTemplate\&.CREATION_TIME = ''\fC [protected]\fP"
+CREATION_TIME uživatele 
+.SS "String com\&.Library\&.Accounts\&.AccountTemplate\&.ID = ''\fC [protected]\fP"
+ID uživatele 
+.SS "String com\&.Library\&.Accounts\&.AccountTemplate\&.MODIFICATION_DATE = ''\fC [protected]\fP"
+MODIFICATION_DATE uživatele 
+.SS "String com\&.Library\&.Accounts\&.AccountTemplate\&.NAME = ''\fC [protected]\fP"
+NAME uživatele 
+.SS "String com\&.Library\&.Accounts\&.AccountTemplate\&.NICKNAME = ''\fC [protected]\fP"
+NICKNAME uživatele 
+.SS "boolean com\&.Library\&.Accounts\&.AccountTemplate\&.p_cart = true\fC [protected]\fP"
+Oprávnění: p_cart 
+.SS "boolean com\&.Library\&.Accounts\&.AccountTemplate\&.p_createBook = true\fC [protected]\fP"
+Oprávnění: p_createBook 
+.SS "boolean com\&.Library\&.Accounts\&.AccountTemplate\&.p_createOrder = true\fC [protected]\fP"
+Oprávnění: p_createOrder 
+.SS "boolean com\&.Library\&.Accounts\&.AccountTemplate\&.p_exit = true\fC [protected]\fP"
+Oprávnění: p_exit 
+.SS "boolean com\&.Library\&.Accounts\&.AccountTemplate\&.p_logOut = true\fC [protected]\fP"
+Oprávnění: p_logOut 
+.SS "boolean com\&.Library\&.Accounts\&.AccountTemplate\&.p_manage = false\fC [protected]\fP"
+Oprávnění: p_manage 
+.SS "boolean com\&.Library\&.Accounts\&.AccountTemplate\&.p_permissions = false\fC [protected]\fP"
+Oprávnění: p_permissions 
+.SS "boolean com\&.Library\&.Accounts\&.AccountTemplate\&.p_showLibrary = true\fC [protected]\fP"
+Oprávnění: p_showLibrary 
+.SS "boolean com\&.Library\&.Accounts\&.AccountTemplate\&.successLoad\fC [protected]\fP"
+successLoad uživatele 
+
+.SH "Autor"
+.PP 
+Generováno automaticky programem Doxygen ze zdrojových textů projektu Dokumentace BookLibrary\&.

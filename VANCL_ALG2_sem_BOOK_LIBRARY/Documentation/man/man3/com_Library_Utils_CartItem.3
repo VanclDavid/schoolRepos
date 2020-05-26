@@ -1,0 +1,157 @@
+.TH "com.Library.Utils.CartItem" 3 "ne 17. kvě 2020" "Version 1" "Dokumentace BookLibrary" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.Library.Utils.CartItem \- Třída vytvářející item a zobrazující se v košíku\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Dědí z bázových tříd \fBcom\&.Library\&.Utils\&.ItemTemplate\fP a Comparable< CartItem >\&.
+.SS "Veřejné metody"
+
+.in +1c
+.ti -1c
+.RI "\fBCartItem\fP (\fBCart\fP cart, String[] \fBparams\fP)"
+.br
+.ti -1c
+.RI "void \fBmouseClicked\fP (MouseEvent e)"
+.br
+.ti -1c
+.RI "void \fBmousePressed\fP (MouseEvent e)"
+.br
+.ti -1c
+.RI "void \fBmouseReleased\fP (MouseEvent e)"
+.br
+.ti -1c
+.RI "void \fBmouseEntered\fP (MouseEvent e)"
+.br
+.ti -1c
+.RI "void \fBmouseExited\fP (MouseEvent e)"
+.br
+.ti -1c
+.RI "int \fBcompareTo\fP (\fBCartItem\fP o)"
+.br
+.in -1c
+.SS "Další zděděné členy"
+.SH "Detailní popis"
+.PP 
+Třída vytvářející item a zobrazující se v košíku\&. 
+
+Pro setřídění výužívána Třída Comparable<CartItem> 
+.PP
+\fBViz také\fP
+.RS 4
+Comparable<CartItem> 
+.RE
+.PP
+
+.SH "Dokumentace konstruktoru a destruktoru"
+.PP 
+.SS "com\&.Library\&.Utils\&.CartItem\&.CartItem (\fBCart\fP cart, String[] params)"
+Konstruktor třídy \fBCartItem\fP
+.PP
+\fBParametry\fP
+.RS 4
+\fIcart\fP Nadřazená stránka\&. 
+.br
+\fIparams\fP Jednotlivé parametry\&. 
+.RE
+.PP
+
+.SH "Dokumentace k metodám"
+.PP 
+.SS "int com\&.Library\&.Utils\&.CartItem\&.compareTo (\fBCartItem\fP o)"
+Metoda porovnávající objekty\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIo\fP porovnávaný objekt Porovnání a colání metody compareTo dochází v: 
+.RE
+.PP
+\fBViz také\fP
+.RS 4
+java\&.util\&.Collections 
+.RE
+.PP
+\fBNávratová hodnota\fP
+.RS 4
+vrací -1,1,0 
+.RE
+.PP
+
+.SS "void com\&.Library\&.Utils\&.CartItem\&.mouseClicked (MouseEvent e)"
+Metoda implementovaná z MouseListener Metoda volaná po kliknutí\&. 
+.PP
+\fBViz také\fP
+.RS 4
+MouseListener
+.RE
+.PP
+\fBParametry\fP
+.RS 4
+\fIe\fP data po kliku 
+.RE
+.PP
+
+.SS "void com\&.Library\&.Utils\&.CartItem\&.mouseEntered (MouseEvent e)"
+Metoda implementovaná z MouseListener Metoda volaná po najetí na položku\&. 
+.PP
+\fBViz také\fP
+.RS 4
+MouseListener
+.RE
+.PP
+\fBParametry\fP
+.RS 4
+\fIe\fP data po kliku 
+.RE
+.PP
+
+.SS "void com\&.Library\&.Utils\&.CartItem\&.mouseExited (MouseEvent e)"
+Metoda implementovaná z MouseListener Metoda volaná po vyjetí na položku\&. 
+.PP
+\fBViz také\fP
+.RS 4
+MouseListener
+.RE
+.PP
+\fBParametry\fP
+.RS 4
+\fIe\fP data po kliku 
+.RE
+.PP
+
+.SS "void com\&.Library\&.Utils\&.CartItem\&.mousePressed (MouseEvent e)"
+Metoda implementovaná z MouseListener Metoda volaná po stisku položky\&. 
+.PP
+\fBViz také\fP
+.RS 4
+MouseListener
+.RE
+.PP
+\fBParametry\fP
+.RS 4
+\fIe\fP data po kliku 
+.RE
+.PP
+
+.SS "void com\&.Library\&.Utils\&.CartItem\&.mouseReleased (MouseEvent e)"
+Metoda implementovaná z MouseListener Metoda volaná po opuštění položky\&. 
+.PP
+\fBViz také\fP
+.RS 4
+MouseListener
+.RE
+.PP
+\fBParametry\fP
+.RS 4
+\fIe\fP data po kliku 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generováno automaticky programem Doxygen ze zdrojových textů projektu Dokumentace BookLibrary\&.
